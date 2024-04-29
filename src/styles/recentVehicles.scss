@@ -1,0 +1,50 @@
+.recentVehicles {
+  .vehTitle {
+    font-size: 2em;
+    font-weight: bold;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .vehItems {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    .vehItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      .icon {
+        background-color: var(--light-green);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .text {
+        font-size: 0.9em;
+        margin-right: 5px;
+        padding: 5px 0;
+        p {
+          color: var(--line-color);
+          margin-bottom: 5px;
+        }
+        span {
+          color: var(--primary-color);
+        }
+      }
+
+      .time {
+        font-size: 0.9em;
+        span {
+          background-color: var(--light-red);
+          color: var(--red);
+          padding: 5px 15px;
+          border-radius: 10px;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}

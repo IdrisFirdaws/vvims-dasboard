@@ -1,0 +1,113 @@
+.dashboard {
+  display: flex;
+  padding: 0 1%;
+  .sidebar {
+    width: 230px;
+    background-color: #fff;
+    height: 100vh;
+
+    .top {
+      height: 100px;
+      background-color: #fff;
+      padding-top: 70px;
+      .user {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .name {
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+
+      hr {
+        width: 90%;
+        border: 0.5px solid var(--line-color);
+      }
+    }
+
+    .down {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .item {
+          span {
+            margin-left: 10px;
+            text-transform: capitalize;
+          }
+
+          &.active {
+            color: var(--primary-color);
+          }
+        }
+      }
+
+      .extra {
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 85%;
+        padding: 10px;
+        color: #fff;
+        border-radius: 20px;
+        .quest {
+          width: fit-content;
+          height: fit-content;
+          background-color: #fff;
+          border-radius: 10px;
+          padding: 10px;
+          text-align: center;
+          .help {
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+          }
+        }
+
+        .bottom {
+          h3 {
+            margin-bottom: 5px;
+          }
+          button {
+            width: 100%;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: bolder;
+          }
+        }
+      }
+
+      .logout {
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 5px;
+          color: var(--red);
+        }
+      }
+    }
+  }
+
+  .content {
+    width: calc(100vw - 250px);
+    height: 100vh;
+
+    .top {
+      height: 120px;
+      background-color: #fff;
+    }
+  }
+}
