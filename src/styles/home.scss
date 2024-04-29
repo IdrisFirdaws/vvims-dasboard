@@ -1,3 +1,5 @@
+@import url(recentVehicles.scss);
+
 .home {
   display: grid;
   gap: 20px;
@@ -6,40 +8,14 @@
   grid-auto-flow: dense;
   padding: 40px;
   background-color: var(--inactive-color);
-  overflow: hidden;
+  overflow-x: auto;
+  z-index: 1;
 
   .box {
     padding: 10px;
     border-radius: 10px;
     background-color: #fff;
     position: relative;
-    // .ellipse {
-    //   z-index: 2;
-    //   .sm {
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    //   }
-
-    //   .md {
-    //     position: absolute;
-    //     width: 80px;
-    //     top: -10px;
-    //     right: -10px;
-    //   }
-
-    //   .lg {
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    //   }
-
-    //   .xl {
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    //   }
-    // }
   }
 
   .box4 {
@@ -53,5 +29,32 @@
 
   .box6 {
     grid-column: span 3;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home {
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+
+    .box6 {
+      grid-column: span 2;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home {
+    width: 100%;
+    grid-template-columns: (1fr) !important;
+
+    .box4 {
+      grid-column: span 2;
+    }
+
+    .box6 {
+      grid-column: span 3 !important;
+      overflow-x: auto !important;
+    }
   }
 }

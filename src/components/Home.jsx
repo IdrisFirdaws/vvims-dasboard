@@ -10,12 +10,7 @@ export default function Home() {
     return (
         <div className="home">
             <div className="box box1">
-                {/* <div className="ellipse">
-                    <img src="images/Ellipse-11.png" alt="" className='xl' />
-                    <img src="images/Ellipse-10.png" alt="" className='lg' />
-                    <img src="images/Ellipse-9.png" alt="" className='md' />
-                    <img src="images/Ellipse-9.png" alt="" className='sm' />
-                </div> */}
+
                 <Visitors />
             </div>
             <div className="box box2">

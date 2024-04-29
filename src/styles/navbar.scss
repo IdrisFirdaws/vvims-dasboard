@@ -55,3 +55,42 @@
     }
   }
 }
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    padding: 0.2%;
+    width: 100%;
+
+    .brand {
+      width: 180px;
+    }
+    .center {
+      gap: 10px;
+      padding: 0 5px;
+      .search {
+        width: 100px;
+        input {
+          width: 90%;
+        }
+      }
+      .right {
+        gap: 5px;
+        .name {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    .center {
+      .right {
+        .navicon {
+          display: none;
+        }
+      }
+    }
+  }
+}

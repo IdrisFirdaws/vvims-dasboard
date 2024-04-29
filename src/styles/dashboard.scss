@@ -106,8 +106,39 @@
     height: 100vh;
 
     .top {
-      height: 120px;
+      height: 20px;
+      padding: 90px 0 20px 10px;
       background-color: #fff;
+
+      .menu-btn {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .dashboard {
+    width: 100%;
+    padding: 0.2%;
+    .sidebar {
+      display: none;
+      position: static;
+      top: 10px;
+      left: 0;
+      &.open {
+        display: block !important;
+      }
+    }
+
+    z-index: 999;
+    .content {
+      width: 100%;
+      margin-right: 0;
+      .menu-btn {
+        display: block !important;
+        cursor: pointer;
+      }
     }
   }
 }
