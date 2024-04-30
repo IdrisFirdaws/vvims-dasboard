@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 1001;
 
   .brand {
     width: 217px;
@@ -57,6 +57,21 @@
 }
 
 @media screen and (max-width: 850px) {
+  .navbar {
+    .center {
+      gap: 10px;
+      .search {
+        width: 200px;
+      }
+
+      .right {
+        gap: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
   .navbar {
     padding: 0.2%;
     width: 100%;

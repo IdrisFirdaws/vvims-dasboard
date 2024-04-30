@@ -20,10 +20,12 @@ export default function Dashboard() {
             <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
                 <div className="top">
                     <div className="user">
+                        <FontAwesomeIcon icon={faTimes} onClick={closeSidebar} />
                         <img src="images/user.png" alt="" />
                         <div className="name">fon teboh</div>
                         <FontAwesomeIcon icon={faAngleRight} />
                     </div>
+
                     <hr />
                 </div>
                 <div className="down">
@@ -78,7 +80,7 @@ export default function Dashboard() {
             <div className='content'>
                 <div className="top">
                     <button onClick={toggleSidebar} className="menu-btn">
-                        <FontAwesomeIcon icon={sidebarOpen ? faTimes : faBars} className='toggleIcon' />
+                        <FontAwesomeIcon icon={faBars} className='toggleIcon' />
                     </button>
                 </div>
                 <div className="charts">
