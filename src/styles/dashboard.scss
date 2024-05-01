@@ -1,9 +1,11 @@
 .dashboard {
+  width: 100vw !important;
+  overflow-x: hidden;
   position: relative;
   display: flex;
   padding: 0 1%;
   .sidebar {
-    width: 230px;
+    width: 15%;
     background-color: #fff;
     height: 100vh;
     z-index: 1000;
@@ -106,7 +108,7 @@
 
   .content {
     position: relative;
-    width: calc(100vw - 250px);
+    width: 80%;
     height: 100vh;
     z-index: 999;
 
@@ -125,28 +127,84 @@
 @media screen and (max-width: 850px) {
   .dashboard {
     width: 100%;
-    padding: 0.2%;
+    padding: 0.2% 0;
     .sidebar {
-      display: none;
-      position: fixed;
-      top: 10px;
-      left: 0;
+      width: 25% !important;
       padding-left: 10px;
-      border: 2px solid var(--line-color);
+    }
 
-      &.open {
-        display: block !important;
+    .content {
+      margin-right: 0;
+      width: 70% !important;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .dashboard {
+    .sidebar {
+      width: 15%;
+      padding-left: 5px;
+      .top {
+        padding-top: 70px;
+        .user {
+          gap: 5px;
+          img {
+            width: 30px;
+          }
+          .name {
+            font-size: 0.8em;
+          }
+        }
+      }
+
+      .down {
+        .items {
+          gap: 10px;
+
+          .item {
+            font-size: 0.7em;
+            span {
+              margin-left: 5px;
+            }
+          }
+        }
+
+        .extra {
+          width: 69%;
+          .quest {
+            padding: 5px;
+            .help {
+              padding: 5px;
+            }
+          }
+
+          .bottom {
+            h3 {
+              margin-bottom: 5px;
+            }
+            button {
+              width: 100%;
+              padding: 5px;
+              font-size: 0.2em;
+            }
+          }
+        }
+
+        .logout {
+          font-size: 0.5em;
+        }
       }
     }
 
     .content {
-      width: 100%;
-      margin-right: 0;
+      .top {
+        height: 20px;
+        padding: 80px 0 20px 10px;
+        background-color: #fff;
 
-      .menu-btn {
-        display: block !important;
-        cursor: pointer;
-        z-index: 1001;
+        .menu-btn {
+          display: none;
+        }
       }
     }
   }

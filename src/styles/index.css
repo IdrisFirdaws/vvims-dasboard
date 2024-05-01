@@ -1,3 +1,10 @@
+@import url(navbar.scss);
+@import url(dashboard.scss);
+@import url(home.scss);
+@import url(visitors.scss);
+@import url(chart.scss);
+@import url(recentVehicles.scss);
+@import url(recentVisitors.scss);
 :root {
   --primary-color: #386bf6;
   --text-color: #424242;
@@ -8,7 +15,6 @@
   --red: #f84f43;
   --light-red: #f8d5d3;
   --blue: #718ebf;
-
   --font: "Montserrat", sans-serif;
 }
 
@@ -17,18 +23,4 @@ body {
   color: var(--text-color);
   width: 100vw;
   overflow-x: hidden;
-}
-
-@import url(navbar.scss);
-
-@import url(dashboard.scss);
-
-@import url(home.scss);
-
-@import url(visitors.scss);
-
-@import url(chart.scss);
-
-@import url(recentVehicles.scss);
-
-@import url(recentVisitors.scss);
+}/*# sourceMappingURL=index.css.map */

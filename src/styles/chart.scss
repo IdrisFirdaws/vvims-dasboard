@@ -38,3 +38,37 @@
     height: 400px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .chart {
+    .chartTop {
+      padding: 10px;
+      .chartTitle {
+        font-size: 1em;
+      }
+
+      .chartRight {
+        gap: 5px;
+        font-size: 0.5em;
+        label {
+          font-size: 0.3em;
+        }
+
+        .month {
+          font-size: 0.3em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chart {
+    .chartTop {
+      padding: 10px;
+      .chartTitle {
+        font-size: 0.5em;
+      }
+    }
+  }
+}

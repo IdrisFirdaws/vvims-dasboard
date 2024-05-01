@@ -50,15 +50,54 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
   .recentVisitors {
-    .visItems {
-      .visItem {
-        gap: 20px;
+    .visTitle {
+      font-size: 1em;
+    }
 
-        .text,
-        .time {
-          width: 200px;
+    .visItems {
+      padding: 5px;
+
+      .visItem {
+        .icon {
+          padding: 5px;
+          img {
+            width: 20px;
+          }
+        }
+        .text {
+          font-size: 0.5em;
+          margin-right: 5px;
+          padding: 2px 0;
+        }
+        .extra {
+          font-size: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .recentVisitors {
+    .visTitle {
+      font-size: 0.5em;
+    }
+
+    .visItems {
+      padding: 5px;
+      gap: 10px;
+
+      .visItem {
+        gap: 10px;
+        .text {
+          font-size: 0.2em;
+          margin-right: 3px;
+          padding: 2px 0;
+        }
+        .extra {
+          font-size: 0.2em;
         }
       }
     }

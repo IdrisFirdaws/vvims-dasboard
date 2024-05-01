@@ -5,7 +5,6 @@
   flex-direction: column;
   gap: 20px;
   background-color: rgba(255, 255, 255, 0.1);
-
   .top {
     display: flex;
     gap: 20px;
@@ -13,7 +12,7 @@
     font-size: 2em;
     font-weight: bold;
     text-transform: capitalize;
-
+    padding-top: 50px !important;
     .icon {
       background-color: var(--primary-color);
       border-radius: 50%;
@@ -71,6 +70,7 @@
     font-size: 2em;
     font-weight: bold;
     text-transform: capitalize;
+    padding-top: 50px !important;
 
     .icon {
       background-color: var(--green);
@@ -129,6 +129,7 @@
     font-size: 2em;
     font-weight: bold;
     text-transform: capitalize;
+    padding-top: 50px !important;
 
     .icon {
       background-color: var(--red);
@@ -170,6 +171,124 @@
       font-size: 0.8em;
       span {
         color: var(--green);
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .visitors,
+  .vehicles,
+  .flaged {
+    .top {
+      gap: 5px;
+      .icon {
+        padding: 8px 10px;
+        img {
+          width: 30px;
+        }
+      }
+      .title {
+        font-size: 0.5em;
+        font-weight: bold;
+      }
+    }
+
+    .bottom {
+      .numb {
+        .figure {
+          font-size: 2em;
+        }
+
+        .percent {
+          font-size: 0.7em;
+
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .down {
+        font-size: 0.6em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .visitors,
+  .vehicles,
+  .flaged {
+    .top {
+      gap: 5px;
+      .icon {
+        padding: 4px 6px;
+        img {
+          width: 20px;
+        }
+      }
+      .title {
+        font-size: 0.2em;
+        font-weight: bold;
+      }
+    }
+
+    .bottom {
+      .numb {
+        gap: 5px;
+        .figure {
+          font-size: 1em;
+        }
+
+        .percent {
+          font-size: 0.5em;
+          padding: 2px;
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .down {
+        font-size: 0.4em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .visitors,
+  .vehicles,
+  .flaged {
+    .top {
+      gap: 3px;
+      padding-left: 0 !important;
+      .icon {
+        padding: 1px 5px;
+        img {
+          width: 15px;
+        }
+      }
+    }
+
+    .bottom {
+      .numb {
+        gap: 3px;
+        .figure {
+          font-size: 0.8em;
+        }
+
+        .percent {
+          font-size: 0.3em;
+          padding: 2px;
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .down {
+        font-size: 0.4em;
       }
     }
   }

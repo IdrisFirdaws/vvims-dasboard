@@ -10,7 +10,6 @@ export default function Home() {
     return (
         <div className="home">
             <div className="box box1">
-
                 <Visitors />
             </div>
             <div className="box box2">

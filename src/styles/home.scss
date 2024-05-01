@@ -1,66 +1,82 @@
 .home {
-  display: grid;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(236px, auto);
-  grid-auto-flow: dense;
-  padding: 40px;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-auto-flow: dense;
+  padding: 2%;
   background-color: var(--inactive-color);
-  overflow-x: auto;
   z-index: 1;
+  justify-content: center;
 
   .box {
-    padding: 10px;
+    padding: 0 10px 15px 10px;
     border-radius: 10px;
     background-color: #fff;
     position: relative;
+    height: fit-content;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    width: 30%;
   }
 
   .box4 {
-    grid-column: span 2;
-    grid-row: span 2;
+    width: calc(60% + 40px);
   }
 
   .box5 {
-    grid-row: span 2;
+    width: 30%;
   }
 
   .box6 {
-    grid-column: span 3;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
   .home {
-    padding: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 10px;
+    width: 100% !important;
 
+    .box1,
+    .box2,
+    .box3 {
+      width: 25%;
+    }
     .box4 {
-      grid-column: span 1;
+      width: 55%;
+    }
+
+    .box5 {
+      width: 25%;
     }
 
     .box6 {
-      grid-column: span 2;
+      width: 85%;
     }
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .home {
-    width: 95% !important;
-    grid-template-columns: (1fr) !important;
-
+    width: 100% !important;
+    padding: 20px 1%;
+    gap: 10px;
     .box {
-      overflow-x: auto;
+      padding: 0 5px 10px 5px;
     }
+  }
+}
 
-    .box4 {
-      grid-column: span 1;
-    }
-
-    .box6 {
-      grid-column: span 1 !important;
-      overflow-x: auto !important;
-    }
+@media screen and (max-width: 600px) {
+  .box4,
+  .box5 {
+    width: 87% !important;
   }
 }

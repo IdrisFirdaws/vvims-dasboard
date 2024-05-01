@@ -14,6 +14,9 @@
   .brand {
     width: 217px;
     margin-right: 2px solid #fff;
+    img {
+      width: 100%;
+    }
   }
   .center {
     display: flex;
@@ -56,10 +59,22 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
   .navbar {
     .center {
-      gap: 10px;
+      gap: 120px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    width: 100vw;
+    .brand {
+      width: 20%;
+    }
+    .center {
+      gap: 100px;
       .search {
         width: 200px;
       }
@@ -71,16 +86,18 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .navbar {
     padding: 0.2%;
     width: 100%;
+    align-items: end;
+    height: 50px;
 
     .brand {
-      width: 180px;
+      width: 100px;
     }
     .center {
-      gap: 10px;
+      gap: 70px;
       padding: 0 5px;
       .search {
         width: 100px;

@@ -1,0 +1,60 @@
+.chart .chartTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.chart .chartTop .chartTitle {
+  font-size: 2em;
+  font-weight: bold;
+}
+.chart .chartTop .chartRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8em;
+}
+.chart .chartTop .chartRight label {
+  font-weight: bold;
+}
+.chart .chartTop .chartRight label input {
+  margin-right: 5px;
+}
+.chart .chartTop .chartRight label.active {
+  color: var(--primary-color);
+}
+.chart .chartTop .chartRight .month {
+  padding: 10px;
+  border: 2px solid var(--line-color);
+  border-radius: 10px;
+}
+.chart .chartBottom {
+  height: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+  .chart .chartTop {
+    padding: 10px;
+  }
+  .chart .chartTop .chartTitle {
+    font-size: 1em;
+  }
+  .chart .chartTop .chartRight {
+    gap: 5px;
+    font-size: 0.5em;
+  }
+  .chart .chartTop .chartRight label {
+    font-size: 0.3em;
+  }
+  .chart .chartTop .chartRight .month {
+    font-size: 0.3em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .chart .chartTop {
+    padding: 10px;
+  }
+  .chart .chartTop .chartTitle {
+    font-size: 0.5em;
+  }
+}/*# sourceMappingURL=chart.css.map */
