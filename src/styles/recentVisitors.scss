@@ -1,4 +1,5 @@
 .recentVisitors {
+  width: 100% !important;
   .visTitle {
     font-size: 2em;
     font-weight: bold;
@@ -52,10 +53,8 @@
 @media screen and (max-width: 850px) {
   .recentVisitors {
     .visItems {
-      gap: 40px;
       .visItem {
         gap: 20px;
-        width: 1500;
 
         .text,
         .time {
