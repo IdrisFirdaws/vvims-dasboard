@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <div className='navbar'>
             <div className="brand">
-                <img src="images/VVIM.png" alt="" className='logo' />
+                <img src="images/VVIMS.png" alt="" className='logo' />
             </div>
 
             <div className="center">

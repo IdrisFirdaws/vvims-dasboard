@@ -52,29 +52,26 @@
 
 @media screen and (max-width: 1024px) {
   .recentVisitors {
-    .visTitle {
-      font-size: 1em;
-    }
-
     .visItems {
       padding: 5px;
 
-      .visItem {
-        .icon {
-          padding: 5px;
-          img {
-            width: 20px;
-          }
-        }
-        .text {
-          font-size: 0.5em;
-          margin-right: 5px;
-          padding: 2px 0;
-        }
-        .extra {
-          font-size: 0.5em;
-        }
-      }
+      // .visItem {
+      //   .icon {
+      //     padding: 5px;
+      //     img {
+      //       width: 20px;
+      //     }
+      //   }
+      // }
+      //   .text {
+      //     font-size: 0.5em;
+      //     margin-right: 5px;
+      //     padding: 2px 0;
+      //   }
+      //   .extra {
+      //     font-size: 0.5em;
+      //   }
+      // }
     }
   }
 }
@@ -82,7 +79,7 @@
 @media screen and (max-width: 600px) {
   .recentVisitors {
     .visTitle {
-      font-size: 0.5em;
+      font-size: 1.5em;
     }
 
     .visItems {
@@ -90,14 +87,13 @@
       gap: 10px;
 
       .visItem {
-        gap: 10px;
-        .text {
-          font-size: 0.2em;
-          margin-right: 3px;
-          padding: 2px 0;
-        }
+        gap: 20px !important;
+        align-items: center;
+        justify-content: start;
+
         .extra {
           font-size: 0.2em;
+          display: none;
         }
       }
     }

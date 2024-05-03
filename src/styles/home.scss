@@ -10,7 +10,6 @@
   padding: 2%;
   background-color: var(--inactive-color);
   z-index: 1;
-  justify-content: center;
 
   .box {
     padding: 0 10px 15px 10px;
@@ -42,41 +41,28 @@
 @media screen and (max-width: 1024px) {
   .home {
     padding: 20px 10px;
-    width: 100% !important;
+    width: 95% !important;
 
     .box1,
     .box2,
     .box3 {
-      width: 25%;
+      width: 28%;
     }
-    .box4 {
-      width: 55%;
-    }
-
+    .box4,
     .box5 {
-      width: 25%;
-    }
-
-    .box6 {
-      width: 85%;
+      width: 45%;
     }
   }
 }
 
 @media screen and (max-width: 600px) {
   .home {
-    width: 100% !important;
-    padding: 20px 1%;
-    gap: 10px;
-    .box {
-      padding: 0 5px 10px 5px;
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5 {
+      width: 98%;
     }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .box4,
-  .box5 {
-    width: 87% !important;
   }
 }

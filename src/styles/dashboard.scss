@@ -15,6 +15,9 @@
       height: 100px;
       background-color: #fff;
       padding-top: 70px;
+      .close {
+        display: none;
+      }
       .user {
         display: flex;
         gap: 10px;
@@ -57,7 +60,7 @@
         background-color: var(--primary-color);
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 5px;
         width: 85%;
         padding: 10px;
         color: #fff;
@@ -75,12 +78,18 @@
             color: #fff;
             border-radius: 50%;
             text-align: center;
+            font-size: 0.8em;
           }
         }
 
         .bottom {
+          font-size: 0.8em;
           h3 {
-            margin-bottom: 5px;
+            margin-bottom: 0;
+          }
+
+          p {
+            margin-bottom: 0;
           }
           button {
             width: 100%;
@@ -124,18 +133,46 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .dashboard {
+    .sidebar {
+      .extra {
+        .bottom {
+          font-size: 0.6em !important;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 850px) {
   .dashboard {
     width: 100%;
     padding: 0.2% 0;
     .sidebar {
-      width: 25% !important;
+      width: 35% !important;
       padding-left: 10px;
+      display: none;
+      position: fixed;
+      top: 10px;
+      left: 0;
+      box-shadow: 0 0 0.9px var(--line-color);
+      &.open {
+        display: block;
+      }
+      .close {
+        display: block !important;
+      }
     }
 
     .content {
       margin-right: 0;
-      width: 70% !important;
+      width: 97% !important;
+      .top {
+        .menu-btn {
+          display: block !important;
+        }
+      }
     }
   }
 }

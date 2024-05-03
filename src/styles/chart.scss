@@ -42,9 +42,8 @@
 @media screen and (max-width: 1024px) {
   .chart {
     .chartTop {
-      padding: 10px;
       .chartTitle {
-        font-size: 1em;
+        font-size: 1.5em;
       }
 
       .chartRight {
@@ -62,13 +61,13 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .chart {
-    .chartTop {
-      padding: 10px;
-      .chartTitle {
-        font-size: 0.5em;
-      }
-    }
-  }
-}
+// @media screen and (max-width: 600px) {
+//   .chart {
+//     .chartTop {
+//       padding: 10px;
+//       .chartTitle {
+//         font-size: 0.5em;
+//       }
+//     }
+//   }
+// }
