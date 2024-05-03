@@ -83,7 +83,10 @@ export default function Dashboard() {
                     <button onClick={toggleSidebar} className="menu-btn">
                         <FontAwesomeIcon icon={faBars} className='toggleIcon' />
                     </button>
-                </div>
+                    <div className="brand">
+                        VVIMS Dashboard
+                        <h3></h3>
+                    </div>                </div>
                 <div className="charts">
                     <Home />
                 </div>

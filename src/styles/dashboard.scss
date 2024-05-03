@@ -125,7 +125,12 @@
       height: 20px;
       padding: 90px 0 20px 10px;
       background-color: #fff;
-
+      display: flex;
+      .brand {
+        font-weight: bold;
+        margin-left: 20px;
+        margin-bottom: 5px;
+      }
       .menu-btn {
         display: none;
       }
