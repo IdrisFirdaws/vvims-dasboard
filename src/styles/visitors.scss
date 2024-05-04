@@ -185,3 +185,82 @@
     }
   }
 }
+
+// @media screen and (max-width: 600px) {
+//   .visitors,
+//   .vehicles,
+//   .flaged {
+//     .top {
+//       gap: 5px;
+//       .icon {
+//         padding: 4px 6px;
+//         img {
+//           width: 20px;
+//         }
+//       }
+//       .title {
+//         font-size: 0.2em;
+//         font-weight: bold;
+//       }
+//     }
+
+//     .bottom {
+//       .numb {
+//         gap: 5px;
+//         .figure {
+//           font-size: 1em;
+//         }
+
+//         .percent {
+//           font-size: 0.5em;
+//           padding: 2px;
+//           span {
+//             margin-right: 10px;
+//           }
+//         }
+//       }
+
+//       .down {
+//         font-size: 0.4em;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 400px) {
+//   .visitors,
+//   .vehicles,
+//   .flaged {
+//     .top {
+//       gap: 3px;
+//       padding-left: 0 !important;
+//       .icon {
+//         padding: 1px 5px;
+//         img {
+//           width: 15px;
+//         }
+//       }
+//     }
+
+//     .bottom {
+//       .numb {
+//         gap: 3px;
+//         .figure {
+//           font-size: 0.8em;
+//         }
+
+//         .percent {
+//           font-size: 0.3em;
+//           padding: 2px;
+//           span {
+//             margin-right: 10px;
+//           }
+//         }
+//       }
+
+//       .down {
+//         font-size: 0.4em;
+//       }
+//     }
+//   }
+// }
