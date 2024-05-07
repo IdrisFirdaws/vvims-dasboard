@@ -2,9 +2,9 @@ import React from 'react'
 import Visitors from '../components/Visitors'
 import Vehicles from '../components/Vehicles'
 import Flaged from '../components/Flaged'
-import Chart from '../components/Chart'
 import RecentVehicle from '../components/RecentVehicle'
 import RecentVisitors from '../components/RecentVisitors'
+import DashboardChart from '../components/charts/DashboardChart'
 
 export default function Dashboard() {
     return (
@@ -34,7 +34,7 @@ export default function Dashboard() {
                 <Flaged />
             </div>
             <div className="box box4">
-                <Chart />
+                <DashboardChart />
             </div>
             <div className="box box5">
                 <RecentVehicle />

@@ -8,6 +8,7 @@
     .chartTitle {
       font-size: 2em;
       font-weight: bold;
+      text-transform: capitalize;
     }
 
     .chartRight {
@@ -61,14 +62,3 @@
     }
   }
 }
-
-// @media screen and (max-width: 600px) {
-//   .chart {
-//     .chartTop {
-//       padding: 10px;
-//       .chartTitle {
-//         font-size: 0.5em;
-//       }
-//     }
-//   }
-// }

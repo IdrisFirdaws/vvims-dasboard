@@ -12,27 +12,33 @@
     align-items: center;
     flex-direction: column;
     padding: 10px;
+    position: relative;
 
     .visItem {
       display: flex;
       align-items: center;
       width: 100%;
       justify-content: space-between;
-      .icon {
-        background-color: var(--light-green);
-        padding: 10px;
-        border-radius: 10px;
-      }
-      .text {
-        font-size: 0.9em;
-        margin-right: 5px;
-        padding: 5px 0;
-        p {
-          color: #000;
-          margin-bottom: 5px;
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .icon {
+          background-color: var(--light-green);
+          padding: 10px;
+          border-radius: 10px;
         }
-        span {
-          color: var(--blue);
+        .text {
+          font-size: 0.9em;
+          margin-right: 5px;
+          padding: 5px 0;
+          p {
+            color: #000;
+            margin-bottom: 5px;
+          }
+          span {
+            color: var(--blue);
+          }
         }
       }
 
@@ -54,24 +60,6 @@
   .recentVisitors {
     .visItems {
       padding: 5px;
-
-      // .visItem {
-      //   .icon {
-      //     padding: 5px;
-      //     img {
-      //       width: 20px;
-      //     }
-      //   }
-      // }
-      //   .text {
-      //     font-size: 0.5em;
-      //     margin-right: 5px;
-      //     padding: 2px 0;
-      //   }
-      //   .extra {
-      //     font-size: 0.5em;
-      //   }
-      // }
     }
   }
 }
@@ -90,7 +78,9 @@
         gap: 20px !important;
         align-items: center;
         justify-content: start;
-
+        .user {
+          gap: 30px;
+        }
         .extra {
           font-size: 0.2em;
           display: none;

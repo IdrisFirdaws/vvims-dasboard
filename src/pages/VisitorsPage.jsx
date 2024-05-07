@@ -1,10 +1,10 @@
 import React from 'react'
 import Visitors from '../components/Visitors'
-import Flaged from '../components/Flaged'
-import Chart from '../components/Chart'
-import RecentVehicle from '../components/RecentVehicle'
 import RecentVisitors from '../components/RecentVisitors'
-import Vehicles from '../components/Vehicles'
+import LastMonthVisitors from '../components/visitors/LastMonthVisitors'
+import DailyAverageVisitors from '../components/visitors/DailyAverageVisitors'
+import VisitorsChart from '../components/visitors/VisitorsChart'
+import AllVisitors from '../components/visitors/AllVisitors'
 
 export default function VisitorsPage() {
     return (
@@ -24,7 +24,7 @@ export default function VisitorsPage() {
                     <img src="images/Ellipse-10g.png" alt="" className='ellipse10' />
                     <img src="images/Ellipse-11g.png" alt="" className='ellipse11' />
 
-                    <Vehicles />
+                    <LastMonthVisitors />
                 </div>
                 <div className="box box3">
                     <img src="images/Ellipse-8r.png" alt="" className='ellipse8' />
@@ -32,15 +32,15 @@ export default function VisitorsPage() {
                     <img src="images/Ellipse-10r.png" alt="" className='ellipse10' />
                     <img src="images/Ellipse-11r.png" alt="" className='ellipse11' />
 
-                    <Flaged />
+                    <DailyAverageVisitors />
                 </div>
             </div>
             <div className="box box4">
-                <Chart />
+                <VisitorsChart />
             </div>
 
             <div className="box box6">
-                <RecentVisitors />
+                <AllVisitors />
             </div>
         </div>
     )
