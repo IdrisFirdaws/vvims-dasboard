@@ -1,96 +1,47 @@
-import { faAngleRight, faCar, faChartSimple, faGear, faHouse, faQuestion, faUsers } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Home from '../components/Home'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react';
+import React from 'react'
+import Visitors from '../components/Visitors'
+import Vehicles from '../components/Vehicles'
+import Flaged from '../components/Flaged'
+import Chart from '../components/Chart'
+import RecentVehicle from '../components/RecentVehicle'
+import RecentVisitors from '../components/RecentVisitors'
 
 export default function Dashboard() {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
-
-    const toggleSidebar = () => {
-        setSidebarOpen(!sidebarOpen);
-    };
-
-    const closeSidebar = () => {
-        setSidebarOpen(false);
-    };
-
     return (
-        <div className='dashboard'>
-            <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
-                <div className="top">
-                    <div className="user">
-                        <FontAwesomeIcon icon={faTimes} className='close' onClick={closeSidebar} />
+        <div className="home">
+            <div className="box box1">
+                <img src="images/Ellipse-8.png" alt="" className='ellipse8' />
+                <img src="images/Ellipse-9.png" alt="" className='ellipse9' />
+                <img src="images/Ellipse-10.png" alt="" className='ellipse10' />
+                <img src="images/Ellipse-11.png" alt="" className='ellipse11' />
 
-                        <img src="images/user.png" alt="" />
-                        <div className="name">fon teboh</div>
-                        <FontAwesomeIcon icon={faAngleRight} />
-                    </div>
-
-                    <hr />
-                </div>
-                <div className="down">
-                    <div className="items">
-                        <div className="item active" onClick={closeSidebar}>
-                            <FontAwesomeIcon icon={faHouse} />
-                            <span>Dashboard</span>
-                        </div>
-
-                        <div className="item" onClick={closeSidebar}>
-                            <FontAwesomeIcon icon={faUsers} />
-                            <span>visitors</span>
-                        </div>
-
-                        <div className="item" onClick={closeSidebar}>
-                            <FontAwesomeIcon icon={faCar} />
-                            <span>Vehicles</span>
-                        </div>
-
-                        <div className="item" onClick={closeSidebar}>
-                            <FontAwesomeIcon icon={faChartSimple} />
-                            <span>report</span>
-                        </div>
-
-                        <div className="item" onClick={closeSidebar}>
-                            <FontAwesomeIcon icon={faGear} />
-                            <span>settings</span>
-                        </div>
-                    </div>
-
-                    <div className="extra">
-                        <div className="quest">
-                            <div className="help">
-                                <FontAwesomeIcon icon={faQuestion} />
-                            </div>
-                        </div>
-
-                        <div className="bottom">
-                            <h3>Need help?</h3>
-                            <p>Please check our docs</p>
-                            <button><span>Documentation</span></button>
-                        </div>
-                    </div>
-
-                    <div className="logout">
-                        <img src="images/logout.png" alt="" />
-                        <span>Log Out</span>
-                    </div>
-                </div>
-
+                <Visitors />
             </div>
-            <div className='content'>
-                <div className="top">
-                    <button onClick={toggleSidebar} className="menu-btn">
-                        <FontAwesomeIcon icon={faBars} className='toggleIcon' />
-                    </button>
-                    <div className="brand">
-                        VVIMS Dashboard
-                        <h3></h3>
-                    </div>                </div>
-                <div className="charts">
-                    <Home />
-                </div>
+            <div className="box box2">
+                <img src="images/Ellipse-8g.png" alt="" className='ellipse8' />
+                <img src="images/Ellipse-9g.png" alt="" className='ellipse9' />
+                <img src="images/Ellipse-10g.png" alt="" className='ellipse10' />
+                <img src="images/Ellipse-11g.png" alt="" className='ellipse11' />
+
+                <Vehicles />
             </div>
-        </div>
-    );
+            <div className="box box3">
+                <img src="images/Ellipse-8r.png" alt="" className='ellipse8' />
+                <img src="images/Ellipse-9r.png" alt="" className='ellipse9' />
+                <img src="images/Ellipse-10r.png" alt="" className='ellipse10' />
+                <img src="images/Ellipse-11r.png" alt="" className='ellipse11' />
+
+                <Flaged />
+            </div>
+            <div className="box box4">
+                <Chart />
+            </div>
+            <div className="box box5">
+                <RecentVehicle />
+            </div>
+            <div className="box box6">
+                <RecentVisitors />
+            </div>
+        </div >
+    )
 }

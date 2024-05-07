@@ -5,6 +5,7 @@ import React from 'react'
 export default function Vehicles() {
     return (
         <div className='vehicles'>
+
             <div className="top">
                 <div className="icon">
                     <img src="images/car.png" alt="" />
@@ -25,9 +26,10 @@ export default function Vehicles() {
                         1.23%</div>
                 </div>
 
-                <div className="down">
-                    <span>10% </span>Decrease of total employee
-                </div>
+
+            </div>
+            <div className="down">
+                <span>10% </span>Decrease of total employee
             </div>
         </div>
     )

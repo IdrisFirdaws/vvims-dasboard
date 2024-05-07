@@ -6,9 +6,9 @@ export default function Navbar() {
     return (
         <div className='navbar'>
             <div className="brand">
-                <img src="images/VVIMS.png" alt="" className='logo' />
+                <img src="images/VVIMS Logow.png" alt="" className='logo' />
+                <hr />
             </div>
-
             <div className="center">
                 <div className="search">
                     <FontAwesomeIcon icon={faMagnifyingGlass} className='searchIcon' />

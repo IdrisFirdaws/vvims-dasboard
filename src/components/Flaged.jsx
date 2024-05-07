@@ -25,9 +25,10 @@ export default function Flaged() {
                         1.23%</div>
                 </div>
 
-                <div className="down">
-                    <span>10% </span>Increase of total employee
-                </div>
+
+            </div>
+            <div className="down">
+                <span>10% </span>Increase of total employee
             </div>
         </div>
     )
