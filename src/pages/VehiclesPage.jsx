@@ -1,5 +1,5 @@
 import FlagedVehicles from '../components/vehicles/FlagedVehicles'
-import DailyAverageVehicles from '../components/vehicles/TotalAverageVehicles'
+import DailyAverageVehicles from '../components/vehicles/DailyAverageVehicles'
 import TotalVehicles from '../components/vehicles/TotalVehicles'
 import AllVehicles from '../components/vehicles/AllVehicles'
 import VehiclesChart from '../components/vehicles/VehiclesChart'

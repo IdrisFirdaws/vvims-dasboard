@@ -3,6 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 export default function FlagedVehicles() {
+
+    let flagedVehicles = 30;
+    let flagedVehiclesPercentage = 1.23;
+    let flagedVehiclesComparison = 10;
+
     return (
         <div className='flaged'>
             <div className="top">
@@ -10,25 +15,25 @@ export default function FlagedVehicles() {
                     <img src="images/smart-car.png" alt="" />
                 </div>
                 <div className="title">
-                    <div>flaged</div>
-                    <div>vehicles</div>
+                    <div>flaged vehicles</div>
                 </div>
             </div>
 
             <div className="bottom">
                 <div className="numb">
-                    <div className="figure">30</div>
+                    <div className="figure">{flagedVehicles}</div>
                     <div className="percent">
                         <span>
                             <FontAwesomeIcon icon={faAngleUp} />
                         </span>
-                        1.23%</div>
+                        {flagedVehiclesPercentage}%
+                    </div>
                 </div>
 
 
             </div>
             <div className="down">
-                <span>10% </span>Increase of total employee
+                <span>{flagedVehiclesComparison}% </span>Increase of total employee
             </div>
         </div>
     )

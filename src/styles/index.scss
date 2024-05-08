@@ -20,10 +20,6 @@ body {
   overflow-x: hidden;
 }
 
-.title {
-  text-transform: capitalize;
-}
-
 @import url(components/navbar.scss);
 
 @import url(components/dashboard.scss);

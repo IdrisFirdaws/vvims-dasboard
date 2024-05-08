@@ -3,6 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 export default function TotalVehicles() {
+
+    let totalVehicles = 90;
+    let totalVehiclesPercentage = 1.23;
+    let totalVehiclesComparison = 10;
+
     return (
         <div className='vehicles'>
 
@@ -18,18 +23,18 @@ export default function TotalVehicles() {
 
             <div className="bottom">
                 <div className="numb">
-                    <div className="figure">90</div>
+                    <div className="figure">{totalVehicles}</div>
                     <div className="percent">
                         <span>
                             <FontAwesomeIcon icon={faAngleUp} />
                         </span>
-                        1.23%</div>
+                        {totalVehiclesPercentage}%</div>
                 </div>
 
 
             </div>
             <div className="down">
-                <span>10% </span>Decrease of total employee
+                <span>{totalVehiclesComparison}% </span>Decrease of total employee
             </div>
         </div>
     )

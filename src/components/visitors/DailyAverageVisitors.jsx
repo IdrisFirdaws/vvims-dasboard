@@ -1,6 +1,10 @@
 import React from 'react'
 
 export default function DailyAverageVisitors() {
+
+    let dailyAverageVisitors = 6;
+    let averageVisitorComparison = 10;
+
     return (
         <div className='vehicles'>
 
@@ -9,21 +13,20 @@ export default function DailyAverageVisitors() {
                     <img src="images/people.png" alt="" />
                 </div>
                 <div className="title">
-                    <div>Daily average</div>
-                    <div>visitors</div>
+                    <div>Daily average visitors</div>
                 </div>
             </div>
 
             <div className="bottom">
                 <div className="numb">
-                    <div className="figure">06</div>
+                    <div className="figure">{dailyAverageVisitors}</div>
 
                 </div>
 
 
             </div>
             <div className="down">
-                <span>10% </span>Increase of total employee
+                <span>{averageVisitorComparison}% </span>Increase of total employee
             </div>
         </div>
     )

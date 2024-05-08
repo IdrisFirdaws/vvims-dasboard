@@ -5,8 +5,14 @@ import React from 'react'
 
 
 export default function TotalVisitors() {
-    return (
 
+    let totalVisitors = 60;
+    let totalVisitorsPercentage = 1.23;
+    let visitorComparison = 10
+
+
+
+    return (
         <div className='visitors'>
 
             <div className="top">
@@ -14,24 +20,24 @@ export default function TotalVisitors() {
                     <img src="images/people.png" alt="" />
                 </div>
                 <div className="title">
-                    <div>total</div>
-                    <div>visitors</div>
+                    <div>total visitors</div>
+                    <div></div>
                 </div>
             </div>
 
             <div className="bottom">
                 <div className="numb">
-                    <div className="figure">60</div>
+                    <div className="figure">{totalVisitors}</div>
                     <div className="percent">
                         <span>
                             <FontAwesomeIcon icon={faAngleUp} />
-                        </span>1.23%</div>
+                        </span>{totalVisitorsPercentage}%</div>
                 </div>
 
 
             </div>
             <div className="down">
-                <span>10 </span>Increase of total employee
+                <span>{visitorComparison}% </span>Increase of total employee
             </div>
         </div>
 

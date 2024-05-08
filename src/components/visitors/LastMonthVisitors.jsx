@@ -1,6 +1,10 @@
 import React from 'react'
 
 export default function LastMonthVisitors() {
+
+    let lastMonthVisitors = 40;
+    let monthlyVisitorComparison = 10;
+
     return (
         <div className='flaged'>
 
@@ -9,20 +13,19 @@ export default function LastMonthVisitors() {
                     <img src="images/people.png" alt="" />
                 </div>
                 <div className="title">
-                    <div>last month</div>
-                    <div>visitors</div>
+                    <div>last month visitors</div>
                 </div>
             </div>
 
             <div className="bottom">
                 <div className="numb">
-                    <div className="figure">40</div>
+                    <div className="figure">{lastMonthVisitors}</div>
                 </div>
 
 
             </div>
             <div className="down">
-                <span>10% </span>Increase of total employee
+                <span>{monthlyVisitorComparison}% </span>Increase of total employee
             </div>
         </div>
     )
