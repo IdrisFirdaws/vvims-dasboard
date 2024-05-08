@@ -1,22 +1,23 @@
 import React from 'react'
 
-export default function LastMonthVisitors() {
+export default function DailyAverageVehicles() {
     return (
-        <div className='flaged'>
+        <div className='visitors'>
 
             <div className="top">
                 <div className="icon">
                     <img src="images/people.png" alt="" />
                 </div>
                 <div className="title">
-                    <div>last month</div>
-                    <div>visitors</div>
+                    <div>Daily average</div>
+                    <div>vehicles</div>
                 </div>
             </div>
 
             <div className="bottom">
                 <div className="numb">
-                    <div className="figure">40</div>
+                    <div className="figure">06</div>
+
                 </div>
 
 

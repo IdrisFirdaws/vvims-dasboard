@@ -44,9 +44,8 @@ export default class Example extends PureComponent {
 
             <div className="chart">
                 <div className="chartTop">
-                    <div className="chartTitle">visitors statistics</div>
+                    <div className="chartTitle">vehicles entry statistics</div>
                     <div className="chartRight">
-
 
                         <select name="month" id="month" className="month">
                             <option value="this month">
@@ -90,3 +89,4 @@ export default class Example extends PureComponent {
         );
     }
 }
+

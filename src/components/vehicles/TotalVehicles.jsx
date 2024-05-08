@@ -2,22 +2,23 @@ import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
-export default function Flaged() {
+export default function TotalVehicles() {
     return (
-        <div className='flaged'>
+        <div className='vehicles'>
+
             <div className="top">
                 <div className="icon">
-                    <img src="images/smart-car.png" alt="" />
+                    <img src="images/car.png" alt="" />
                 </div>
                 <div className="title">
                     <div>total</div>
-                    <div>visitors</div>
+                    <div>vehicles</div>
                 </div>
             </div>
 
             <div className="bottom">
                 <div className="numb">
-                    <div className="figure">60</div>
+                    <div className="figure">90</div>
                     <div className="percent">
                         <span>
                             <FontAwesomeIcon icon={faAngleUp} />
@@ -28,7 +29,7 @@ export default function Flaged() {
 
             </div>
             <div className="down">
-                <span>10% </span>Increase of total employee
+                <span>10% </span>Decrease of total employee
             </div>
         </div>
     )

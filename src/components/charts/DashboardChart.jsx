@@ -1,9 +1,7 @@
 import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import TotalVisitors from '../visitors/TotalVisitors';
-import Vehicles from '../Vehicles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import TotalVehicles from '../vehicles/TotalVehicles';
 
 const data = [
     {
@@ -54,13 +52,14 @@ export default class Example extends PureComponent {
                         </label>
 
                         <label>
-                            <input type="checkbox" name="selection" value={Vehicles} />Vehicles
+                            <input type="checkbox" name="selection" value={TotalVehicles} />Vehicles
                         </label>
 
-                        <div className="month">
-                            <span>This Month</span>
-                            <FontAwesomeIcon icon={faAngleDown} />
-                        </div>
+                        <select name="month" id="month" className="month">
+                            <option value="this month">
+                                <span>This Month</span>
+                            </option>
+                        </select>
                     </div>
                 </div>
 

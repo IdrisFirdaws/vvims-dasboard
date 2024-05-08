@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function DailyAverageVisitors() {
     return (
-        <div className='visitors'>
+        <div className='vehicles'>
 
             <div className="top">
                 <div className="icon">

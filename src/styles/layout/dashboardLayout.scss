@@ -5,11 +5,16 @@
   display: flex;
   padding: 0 0 0 2%;
   .sidebar {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // padding: 10px 1% 0 2%;
     width: 15%;
     background-color: #fff;
     height: 100vh;
     z-index: 1000;
     transition: 0.3s ease;
+    // overflow-x: auto;
 
     .top {
       height: 100px;
@@ -187,6 +192,7 @@
     width: 80%;
     height: 100vh;
     z-index: 999;
+    // margin-left: 15%;
 
     .top {
       height: 20px;

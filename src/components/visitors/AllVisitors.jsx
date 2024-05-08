@@ -3,7 +3,7 @@ import VisitorList from './VisitorList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown, faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons'
 
-export default function Visitors() {
+export default function AllVisitors() {
     return (
         <div className='allVisitors'>
 

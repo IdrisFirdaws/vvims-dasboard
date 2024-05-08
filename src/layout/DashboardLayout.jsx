@@ -41,10 +41,10 @@ export default function DashboardLayout() {
                             <span>visitors</span>
                         </NavLink>
 
-                        <div className="item" onClick={closeSidebar}>
+                        <NavLink to='/vehicles' className="item" onClick={closeSidebar}>
                             <FontAwesomeIcon icon={faCar} />
                             <span>Vehicles</span>
-                        </div>
+                        </NavLink>
 
                         <div className="item" onClick={closeSidebar}>
                             <FontAwesomeIcon icon={faChartSimple} />
