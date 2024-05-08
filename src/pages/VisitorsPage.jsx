@@ -1,10 +1,9 @@
 import React from 'react'
-import Visitors from '../components/Visitors'
-import RecentVisitors from '../components/RecentVisitors'
+import TotalVisitors from '../components/visitors/TotalVisitors'
 import LastMonthVisitors from '../components/visitors/LastMonthVisitors'
 import DailyAverageVisitors from '../components/visitors/DailyAverageVisitors'
 import VisitorsChart from '../components/visitors/VisitorsChart'
-import AllVisitors from '../components/visitors/AllVisitors'
+import Visitors from '../components/visitors/Visitors'
 
 export default function VisitorsPage() {
     return (
@@ -16,7 +15,7 @@ export default function VisitorsPage() {
                     <img src="images/Ellipse-10.png" alt="" className='ellipse10' />
                     <img src="images/Ellipse-11.png" alt="" className='ellipse11' />
 
-                    <Visitors />
+                    <TotalVisitors />
                 </div>
                 <div className="box box2">
                     <img src="images/Ellipse-8g.png" alt="" className='ellipse8' />
@@ -40,7 +39,7 @@ export default function VisitorsPage() {
             </div>
 
             <div className="box box6">
-                <AllVisitors />
+                <Visitors />
             </div>
         </div>
     )

@@ -1,9 +1,9 @@
 import React from 'react'
-import VisitorList from './visitors/VisitorList'
+import VisitorList from './VisitorList'
 
 export default function RecentVisitors() {
     return (
-        <div className='recentVisitors'>
+        <div className='allVisitors'>
             <div className="visTitle">Recent Logged in Visitors</div>
 
             <VisitorList />

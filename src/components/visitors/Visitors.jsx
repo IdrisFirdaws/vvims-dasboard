@@ -1,11 +1,11 @@
 import React from 'react'
 import VisitorList from './VisitorList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown, faCaretDown, faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown, faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons'
 
-export default function AllVisitors() {
+export default function Visitors() {
     return (
-        <div className='recentVisitors'>
+        <div className='allVisitors'>
 
             <div className="top">
                 <div className="right">

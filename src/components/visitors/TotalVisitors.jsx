@@ -4,8 +4,9 @@ import React from 'react'
 
 
 
-export default function Visitors() {
+export default function TotalVisitors() {
     return (
+
         <div className='visitors'>
 
             <div className="top">
@@ -24,15 +25,16 @@ export default function Visitors() {
                     <div className="percent">
                         <span>
                             <FontAwesomeIcon icon={faAngleUp} />
-                        </span>
-                        1.23%</div>
+                        </span>1.23%</div>
                 </div>
 
 
             </div>
             <div className="down">
-                <span>10% </span>Increase of total employee
+                <span>10 </span>Increase of total employee
             </div>
         </div>
+
+
     )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-import Visitors from '../components/Visitors'
+import TotalVisitors from '../components/visitors/TotalVisitors'
 import Vehicles from '../components/Vehicles'
 import Flaged from '../components/Flaged'
 import RecentVehicle from '../components/RecentVehicle'
-import RecentVisitors from '../components/RecentVisitors'
+import RecentVisitors from '../components/visitors/RecentVisitors'
 import DashboardChart from '../components/charts/DashboardChart'
 
 export default function Dashboard() {
@@ -15,7 +15,7 @@ export default function Dashboard() {
                 <img src="images/Ellipse-10.png" alt="" className='ellipse10' />
                 <img src="images/Ellipse-11.png" alt="" className='ellipse11' />
 
-                <Visitors />
+                <TotalVisitors />
             </div>
             <div className="box box2">
                 <img src="images/Ellipse-8g.png" alt="" className='ellipse8' />

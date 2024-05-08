@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import Visitors from '../Visitors';
+import TotalVisitors from '../visitors/TotalVisitors';
 import Vehicles from '../Vehicles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
@@ -50,7 +50,7 @@ export default class Example extends PureComponent {
                     <div className="chartTitle">Entry statistics</div>
                     <div className="chartRight">
                         <label className='active'>
-                            <input type="checkbox" name="selection" value={Visitors} />Visitors
+                            <input type="checkbox" name="selection" value={TotalVisitors} />Visitors
                         </label>
 
                         <label>
