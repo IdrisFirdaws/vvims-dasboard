@@ -1,13 +1,17 @@
+import React from 'react';
 import { vehicleItem } from "../../data/VehicleData";
 
 export default function RecentVehicle() {
+    // Get the last 4 items from vehicleItem array
+    const latestItems = vehicleItem.slice(-4);
+
     return (
         <div className='recentVehicles'>
             <div className="vehTitle">Recent Logged in Vehicles</div>
 
             <div className="vehItems">
                 {
-                    vehicleItem.map(vehicle => (
+                    latestItems.map(vehicle => (
                         <div className="vehItem" key={vehicle.vehicleId}>
                             <div className="icon">
                                 <img src="images/car.png" alt="" />
@@ -23,10 +27,7 @@ export default function RecentVehicle() {
                         </div>
                     ))
                 }
-
             </div>
         </div>
-
-
-    )
+    );
 }

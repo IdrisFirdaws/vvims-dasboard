@@ -1,12 +1,24 @@
-import React from 'react'
-import { visitorItem } from '../../data/VisitorsData'
 
-import { vehicleItem } from '../../data/VehicleData'
+import React, { useState } from 'react';
+import Pagination from '../Pagination';
+import { visitorItem } from '../../data/VisitorsData';
+import { vehicleItem } from '../../data/VehicleData';
 
 export default function VehicleList() {
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 4;
+
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = vehicleItem.slice(indexOfFirstItem, indexOfLastItem);
+
+    const totalPages = Math.ceil(vehicleItem.length / itemsPerPage);
+
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
     return (
         <div className="visItems">
-            {vehicleItem.map(vehicle => (
+            {currentItems.map(vehicle => (
                 <div className="visItem" key={vehicle.vehicleId}>
                     <div className="user">
                         <div className="icon">
@@ -26,11 +38,11 @@ export default function VehicleList() {
                         {visitorItem.filter(visitor => visitor.visitorId === vehicle.visitorId)[0].name}
                     </div>
 
-                    <div className="extra">
+                    <div className="extra time">
                         {vehicle.entrydate}/{vehicle.entrymonth}/{vehicle.entryyear}-{vehicle.entrytime}
                     </div>
 
-                    <div className="extra">
+                    <div className="extra time">
                         {vehicle.exitdate}/{vehicle.exitmonth}/{vehicle.exityear}-{vehicle.exittime}
                     </div>
 
@@ -40,7 +52,7 @@ export default function VehicleList() {
                 </div>
             ))}
 
-
+            <Pagination currentPage={currentPage} totalPages={totalPages} paginate={paginate} />
         </div>
-    )
+    );
 }

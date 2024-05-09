@@ -1,0 +1,77 @@
+.vehiclesPage {
+  .watchListVehicles {
+    .vehTitle {
+      font-size: 1.2em;
+      font-weight: bold;
+      width: 90%;
+      margin-bottom: 30px;
+      text-transform: capitalize;
+    }
+
+    .vehItems {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      // overflow-x: auto;
+      // ::-webkit-scrollbar {
+      //   width: 6px;
+      // }
+      // ::-webkit-scrollbar-thumb {
+      //   background-color: red;
+      //   // background-color: rgba(0, 0, 0, 0.2);
+      //   border-radius: 6px;
+      // }
+
+      .vehItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        .left {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .icon {
+            background-color: var(--light-red);
+            padding: 10px;
+            border-radius: 10px;
+          }
+          .text {
+            font-size: 0.9em;
+            margin-right: 5px;
+            padding: 5px 0;
+            p {
+              color: var(--line-color);
+              margin-bottom: 5px;
+            }
+            span {
+              color: var(--primary-color);
+            }
+          }
+        }
+
+        .time {
+          font-size: 0.9em;
+          padding-right: 10px;
+          span {
+            background-color: var(--light-green);
+            color: var(--green);
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .watchListVehicles {
+      .vehTitle {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

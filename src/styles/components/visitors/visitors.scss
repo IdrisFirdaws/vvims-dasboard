@@ -24,7 +24,6 @@
     .title {
       text-transform: capitalize;
       font-size: 0.8em;
-      width: 80%;
     }
   }
 
@@ -90,7 +89,6 @@
     .title {
       text-transform: capitalize;
       font-size: 0.8em;
-      width: 80%;
     }
   }
 
@@ -156,7 +154,6 @@
     .title {
       text-transform: capitalize;
       font-size: 0.8em;
-      width: 80%;
     }
   }
 
@@ -202,7 +199,7 @@
   .vehicles,
   .flaged {
     .title {
-      font-size: 0.8em;
+      font-size: 0.6em !important;
     }
   }
 }

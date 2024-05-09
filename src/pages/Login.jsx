@@ -2,7 +2,6 @@ import React from 'react'
 import LoginSidebar from '../components/LoginSidebar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faEye } from '@fortawesome/free-regular-svg-icons'
-import Copyright from '../components/Copyright'
 import { Link } from 'react-router-dom'
 
 export default function Login() {

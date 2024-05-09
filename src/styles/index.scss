@@ -22,23 +22,62 @@ body {
 
 @import url(components/navbar.scss);
 
-@import url(components/dashboard.scss);
-
+//layout
 @import url(layout/dashboardLayout.scss);
 
-@import url(components/visitors.scss);
+//pages
+@import url(pages/dashboard.scss);
+@import url(pages/visitorsPage.scss);
+@import url(pages/vehiclesPage.scss);
+
+//components
+
+@import url(components/visitors/visitors.scss);
 
 @import url(components/chart.scss);
 
-@import url(components/recentVehicles.scss);
+@import url(components/visitors/allVisitors.scss);
 
-@import url(components/allVisitors.scss);
+@import url(components//login/loginSidebar.scss);
 
-@import url(components/loginSidebar.scss);
+@import url(components/login/login.scss);
 
-@import url(components/login.scss);
+//vehicles
+@import url(components/vehicle/recentVehicles.scss);
+@import url(components/vehicle/vehiclePgaeCards.scss);
+@import url(components/vehicle/vehiclesCharts.scss);
+@import url(components/vehicle/watchListVehicles.scss);
+@import url(components/vehicle/alertBox.scss);
+@import url(components/vehicle/allVehicles.scss);
 
-//pages
-@import url(pages/visitorsPage.scss);
+.pagination {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  .prev,
+  .next {
+    padding: 3px 15px;
+    background-color: #fff;
+    border: 1px solid var(--line-color);
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
-@import url(pages/vehiclesPage.scss);
+  .prev {
+    margin-right: 5px;
+  }
+  .next {
+    margin-left: 5px;
+  }
+
+  .active {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 3px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+  }
+}

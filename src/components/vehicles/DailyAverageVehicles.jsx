@@ -9,7 +9,7 @@ export default function DailyAverageVehicles() {
 
             <div className="top">
                 <div className="icon">
-                    <img src="images/people.png" alt="" />
+                    <img src="images/car.png" alt="" />
                 </div>
                 <div className="title">
                     <div>Daily average</div>

@@ -15,7 +15,8 @@ export default function FlagedVehicles() {
                     <img src="images/smart-car.png" alt="" />
                 </div>
                 <div className="title">
-                    <div>flaged vehicles</div>
+                    <div>flaged </div>
+                    <div>vehicles</div>
                 </div>
             </div>
 

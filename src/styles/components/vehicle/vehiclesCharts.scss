@@ -1,0 +1,60 @@
+.vehiclesPage {
+  .chart {
+    .chartTop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+
+      .chartTitle {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+
+      .chartRight {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.8em;
+        label {
+          font-weight: bold;
+          input {
+            margin-right: 5px;
+          }
+
+          &.active {
+            color: var(--primary-color);
+          }
+        }
+
+        .month {
+          padding: 10px;
+          border: 2px solid var(--line-color);
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .chartBottom {
+      height: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .vehiclesPage {
+    .chart {
+      .chartTop {
+        .chartTitle {
+          font-size: 1.2em;
+        }
+        .chartRight {
+          .month {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}

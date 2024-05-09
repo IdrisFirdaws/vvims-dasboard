@@ -1,0 +1,303 @@
+.vehiclesPage {
+  .allVisitors {
+    .top {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      margin: 0;
+      padding: 30px 2%;
+      .right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .visTitle {
+          font-size: 1.2em;
+          font-weight: bold;
+          text-transform: capitalize;
+          width: fit-content;
+          margin-bottom: 0;
+        }
+        .searchbar {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .input {
+            padding: 10px 50px 10px 20px;
+            border-radius: 10px;
+            background-color: var(--line-color);
+            color: var(--text-light);
+            display: flex;
+            cursor: pointer;
+            input {
+              margin-left: 10px;
+              background-color: var(--line-color);
+              border: none;
+              outline: none;
+            }
+          }
+
+          select {
+            background-color: #fff;
+            border: 1px solid var(--line-color);
+            padding: 9px;
+            border-radius: 10px;
+          }
+        }
+      }
+
+      .button {
+        padding: 10px;
+        background-color: var(--green);
+        border-radius: 10px;
+        color: #fff;
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 2% 0 2%;
+      .headingItem {
+        color: var(--text-light);
+        font-size: 0.8em;
+        min-width: 175px;
+        span {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .visTitle {
+      font-size: 2em;
+      font-weight: bold;
+      width: 90%;
+      margin-bottom: 30px;
+    }
+
+    .visItems {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px;
+      position: relative;
+      hr {
+        margin: 10px 2%;
+        border: 0.5px solid var(--line-color);
+        width: 98%;
+      }
+
+      .visItem {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .icon {
+            background-color: var(--primary-color);
+            padding: 10px;
+            border-radius: 10px;
+          }
+          .text {
+            font-size: 0.9em;
+            margin-right: 5px;
+            padding: 5px 0;
+            p {
+              color: #000;
+              margin-bottom: 5px;
+            }
+            span {
+              color: var(--primary-color);
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        .extra {
+          font-size: 0.8em;
+        }
+        .flaged {
+          font-size: 0.6em;
+          background-color: var(--light-red);
+          width: 60px;
+          display: flex;
+          justify-content: center;
+          color: var(--red);
+          border-radius: 10px;
+          padding: 5px 0;
+        }
+
+        .unflaged {
+          font-size: 0.6em;
+          background-color: var(--light-green);
+          width: 60px;
+          display: flex;
+          justify-content: center;
+          color: var(--green);
+          border-radius: 10px;
+          padding: 5px 0;
+        }
+      }
+    }
+    hr {
+      margin: 10px 2%;
+      border: 0.5px solid var(--line-color);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .vehiclesPage {
+    .allVisitors {
+      .heading {
+        .headingItem {
+          min-width: 10px;
+          span {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .time {
+        display: none;
+      }
+
+      .visTitle {
+        font-size: 2em;
+        font-weight: bold;
+        width: 90%;
+        margin-bottom: 30px;
+      }
+
+      .visItems {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+        hr {
+          margin: 10px 2%;
+          border: 0.5px solid var(--line-color);
+          width: 98%;
+        }
+
+        .visItem {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: space-between;
+          .user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .icon {
+              background-color: var(--primary-color);
+              padding: 10px;
+              border-radius: 10px;
+            }
+            .text {
+              font-size: 0.9em;
+              margin-right: 5px;
+              padding: 5px 0;
+              p {
+                color: #000;
+                margin-bottom: 5px;
+              }
+              span {
+                color: var(--primary-color);
+                text-transform: capitalize;
+              }
+            }
+          }
+
+          .extra {
+            font-size: 0.8em;
+          }
+          .flaged {
+            font-size: 0.6em;
+            background-color: var(--light-red);
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            color: var(--red);
+            border-radius: 10px;
+            padding: 5px 0;
+          }
+
+          .unflaged {
+            font-size: 0.6em;
+            background-color: var(--light-green);
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            color: var(--green);
+            border-radius: 10px;
+            padding: 5px 0;
+          }
+        }
+      }
+      hr {
+        margin: 10px 2%;
+        border: 0.5px solid var(--line-color);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vehiclesPage {
+    .allVisitors {
+      .top {
+        .right {
+          gap: 10px;
+          .visTitle {
+            font-size: 0.8em !important;
+          }
+          .searchbar {
+            .input {
+              display: flex;
+              gap: 10px;
+              padding: 10px;
+              input {
+                margin-left: 0;
+                background-color: var(--line-color);
+                border: none;
+                outline: none;
+              }
+            }
+
+            select {
+              display: none;
+            }
+          }
+        }
+
+        .button {
+          padding: 10px;
+          background-color: var(--green);
+          border-radius: 10px;
+          color: #fff;
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .button {
+        display: none;
+      }
+    }
+
+    .heading {
+      display: none;
+    }
+    hr {
+      display: none;
+    }
+  }
+}

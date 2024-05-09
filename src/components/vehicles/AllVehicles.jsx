@@ -1,5 +1,4 @@
 import React from 'react'
-import VisitorList from '../visitors/VisitorList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown, faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons'
 import VehicleList from './VehicleList'
@@ -46,12 +45,12 @@ export default function AllVehicles() {
                     <FontAwesomeIcon icon={faCaretDown} />
                 </div>
 
-                <div className="headingItem">
+                <div className="headingItem time">
                     <span>Entry Time</span>
                     <FontAwesomeIcon icon={faCaretDown} />
                 </div>
 
-                <div className="headingItem">
+                <div className="headingItem time">
                     <span>Exit Time</span>
                     <FontAwesomeIcon icon={faCaretDown} />
                 </div>
@@ -64,6 +63,7 @@ export default function AllVehicles() {
             <hr />
 
             <VehicleList />
+
         </div>
     )
 }

@@ -20,8 +20,8 @@ export default function TotalVisitors() {
                     <img src="images/people.png" alt="" />
                 </div>
                 <div className="title">
-                    <div>total visitors</div>
-                    <div></div>
+                    <div>total</div>
+                    <div>visitors</div>
                 </div>
             </div>
 

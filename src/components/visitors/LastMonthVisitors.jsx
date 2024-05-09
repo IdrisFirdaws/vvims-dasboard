@@ -13,7 +13,8 @@ export default function LastMonthVisitors() {
                     <img src="images/people.png" alt="" />
                 </div>
                 <div className="title">
-                    <div>last month visitors</div>
+                    <div>last month</div>
+                    <div>visitors</div>
                 </div>
             </div>
 

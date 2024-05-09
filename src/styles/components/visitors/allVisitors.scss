@@ -13,7 +13,11 @@
     flex-direction: column;
     padding: 10px;
     position: relative;
-
+    hr {
+      margin: 10px 2%;
+      border: 0.5px solid var(--line-color);
+      width: 98%;
+    }
     .visItem {
       display: flex;
       align-items: center;

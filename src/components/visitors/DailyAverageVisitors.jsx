@@ -13,7 +13,8 @@ export default function DailyAverageVisitors() {
                     <img src="images/people.png" alt="" />
                 </div>
                 <div className="title">
-                    <div>Daily average visitors</div>
+                    <div>Daily average</div>
+                    <div>visitors</div>
                 </div>
             </div>
 
