@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 
 const data = [
@@ -69,12 +69,7 @@ export default class Example extends PureComponent {
                                 bottom: 5,
                             }}
                         >
-                            <Tooltip
-                                contentStyle={{ background: "transparent", border: "none" }}
-                                labelStyle={{ display: "none" }}
-                            />
 
-                            <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="name" />
                             <YAxis />
                             <Tooltip />

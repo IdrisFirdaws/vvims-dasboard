@@ -42,7 +42,7 @@ export default function VisitorList() {
                     </div>
                 </div>
             ))}
-            <hr />
+
             <Pagination currentPage={currentPage} totalPages={totalPages} paginate={paginate} />
         </div>
     );

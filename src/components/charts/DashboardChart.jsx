@@ -64,6 +64,7 @@ export default class Example extends PureComponent {
                 </div>
 
                 <div className="chartBottom">
+
                     <ResponsiveContainer width="100%" height="100%">
                         <LineChart
                             width={500}
@@ -76,12 +77,6 @@ export default class Example extends PureComponent {
                                 bottom: 5,
                             }}
                         >
-                            <Tooltip
-                                contentStyle={{ background: "transparent", border: "none" }}
-                                labelStyle={{ display: "none" }}
-                            />
-
-                            <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="name" />
                             <YAxis />
                             <Tooltip />

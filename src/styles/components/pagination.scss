@@ -1,0 +1,31 @@
+.pagination {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  .prev,
+  .next {
+    padding: 3px 15px;
+    background-color: #fff;
+    border: 1px solid var(--line-color);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .prev {
+    margin-right: 5px;
+  }
+  .next {
+    margin-left: 5px;
+  }
+
+  .active {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 3px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+  }
+}

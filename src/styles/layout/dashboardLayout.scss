@@ -55,12 +55,17 @@
           color: var(--text-color);
 
           span {
-            margin-left: 10px;
+            margin: 0 5px;
             text-transform: capitalize;
+            font-size: 0.8em;
           }
 
-          &.active {
-            color: var(--primary-color);
+          a {
+            text-decoration: none;
+            color: inherit;
+            &.active {
+              color: var(--primary-color);
+            }
           }
         }
       }

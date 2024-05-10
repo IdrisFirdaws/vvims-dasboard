@@ -20,8 +20,6 @@ body {
   overflow-x: hidden;
 }
 
-@import url(components/navbar.scss);
-
 //layout
 @import url(layout/dashboardLayout.scss);
 
@@ -29,17 +27,19 @@ body {
 @import url(pages/dashboard.scss);
 @import url(pages/visitorsPage.scss);
 @import url(pages/vehiclesPage.scss);
+@import url(pages/AllAttendance.scss);
 
 //components
-
-@import url(components/visitors/visitors.scss);
-
+@import url(components/navbar.scss);
+@import url(components/dashboardCards.scss);
 @import url(components/chart.scss);
+@import url(components/pagination.scss);
 
+//visitors
 @import url(components/visitors/allVisitors.scss);
 
+//login
 @import url(components//login/loginSidebar.scss);
-
 @import url(components/login/login.scss);
 
 //vehicles
@@ -50,34 +50,7 @@ body {
 @import url(components/vehicle/alertBox.scss);
 @import url(components/vehicle/allVehicles.scss);
 
-.pagination {
-  align-self: flex-end;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 0;
-  .prev,
-  .next {
-    padding: 3px 15px;
-    background-color: #fff;
-    border: 1px solid var(--line-color);
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .prev {
-    margin-right: 5px;
-  }
-  .next {
-    margin-left: 5px;
-  }
-
-  .active {
-    background-color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    padding: 3px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    color: #fff;
-  }
-}
+//attendance
+@import url(components/attendance/attendancePageCards.scss);
+@import url(components/attendance/attendanceChart.scss);
+@import url(components/attendance/statschart.scss);

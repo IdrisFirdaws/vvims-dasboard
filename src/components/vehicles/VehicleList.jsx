@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Pagination from '../Pagination';
 import { visitorItem } from '../../data/VisitorsData';
 import { vehicleItem } from '../../data/VehicleData';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function VehicleList() {
     const [currentPage, setCurrentPage] = useState(1);
@@ -17,42 +19,76 @@ export default function VehicleList() {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
-        <div className="visItems">
+        <table className="visItems">
+
+            <th className='heading'>
+                <td className="headingItem">
+                    <span>Model & color</span>
+                    <FontAwesomeIcon icon={faCaretDown} />
+                </td>
+
+                <td className="headingItem sm">
+                    <span>Plate Number</span>
+                    <FontAwesomeIcon icon={faCaretDown} />
+                </td>
+
+                <td className="headingItem sm">
+                    <span>Owner</span>
+                    <FontAwesomeIcon icon={faCaretDown} />
+                </td>
+
+                <td className="headingItem time">
+                    <span>Entry Time</span>
+                    <FontAwesomeIcon icon={faCaretDown} />
+                </td>
+
+                <td className="headingItem time">
+                    <span>Exit Time</span>
+                    <FontAwesomeIcon icon={faCaretDown} />
+                </td>
+
+                <td className="headingItem">
+                    <span>Action</span>
+                    <FontAwesomeIcon icon={faCaretDown} />
+                </td>
+            </th>
+            <hr />
+
             {currentItems.map(vehicle => (
-                <div className="visItem" key={vehicle.vehicleId}>
-                    <div className="user">
-                        <div className="icon">
+                <tr className="visItem" key={vehicle.vehicleId}>
+                    <td className="user">
+                        <td className="icon">
                             <img src="images/car.png" alt="" />
-                        </div>
-                        <div className="text">
+                        </td>
+                        <td className="text">
                             <p>{vehicle.model}</p>
                             <span>{vehicle.color}</span>
-                        </div>
-                    </div>
+                        </td>
+                    </td>
 
-                    <div className="extra">
+                    <td className="extra">
                         {vehicle.number}
-                    </div>
+                    </td>
 
-                    <div className="extra">
+                    <td className="extra">
                         {visitorItem.filter(visitor => visitor.visitorId === vehicle.visitorId)[0].name}
-                    </div>
+                    </td>
 
-                    <div className="extra time">
+                    <td className="extra time">
                         {vehicle.entrydate}/{vehicle.entrymonth}/{vehicle.entryyear}-{vehicle.entrytime}
-                    </div>
+                    </td>
 
-                    <div className="extra time">
+                    <td className="extra time">
                         {vehicle.exitdate}/{vehicle.exitmonth}/{vehicle.exityear}-{vehicle.exittime}
-                    </div>
+                    </td>
 
-                    <div className={vehicle.condition}>
+                    <td className={vehicle.condition}>
                         {vehicle.condition}
-                    </div>
-                </div>
+                    </td>
+                </tr>
             ))}
 
             <Pagination currentPage={currentPage} totalPages={totalPages} paginate={paginate} />
-        </div>
+        </table>
     );
 }

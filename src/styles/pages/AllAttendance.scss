@@ -1,0 +1,67 @@
+.allAttendacePage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // display: grid;
+  gap: 20px;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-auto-flow: dense;
+  padding: 2% 2% 2% 2%;
+  background-color: var(--inactive-color);
+  z-index: 1;
+
+  .box {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    height: fit-content;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5 {
+    width: 15.3%;
+  }
+
+  .box6 {
+    width: calc(60%);
+  }
+  .box7 {
+    width: 27.3%;
+  }
+  .box8 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    padding: 20px 10px;
+    width: 95% !important;
+
+    .box1,
+    .box2,
+    .box3 {
+      width: 28%;
+    }
+    .box4,
+    .box5 {
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5 {
+      width: 98%;
+    }
+  }
+}

@@ -29,38 +29,8 @@ export default function AllVehicles() {
                 </div>
             </div>
 
-            <div className="heading">
-                <div className="headingItem">
-                    <span>Model & color</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </div>
 
-                <div className="headingItem">
-                    <span>Plate Number</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </div>
 
-                <div className="headingItem">
-                    <span>Owner</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </div>
-
-                <div className="headingItem time">
-                    <span>Entry Time</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </div>
-
-                <div className="headingItem time">
-                    <span>Exit Time</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </div>
-
-                <div className="headingItem">
-                    <span>Action</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </div>
-            </div>
-            <hr />
 
             <VehicleList />
 

@@ -1,0 +1,92 @@
+import React, { PureComponent } from 'react';
+import TotalVisitors from '../visitors/TotalVisitors';
+import TotalVehicles from '../vehicles/TotalVehicles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { BarChart, Bar, ResponsiveContainer } from 'recharts';
+
+const data = [
+    {
+        name: 'Page A',
+        uv: 4000,
+        pv: 2400,
+        amt: 2400,
+    },
+    {
+        name: 'Page B',
+        uv: 3000,
+        pv: 1398,
+        amt: 2210,
+    },
+    {
+        name: 'Page C',
+        uv: 2000,
+        pv: 9800,
+        amt: 2290,
+    },
+    {
+        name: 'Page D',
+        uv: 2780,
+        pv: 3908,
+        amt: 2000,
+    },
+    {
+        name: 'Page E',
+        uv: 1890,
+        pv: 4800,
+        amt: 2181,
+    },
+    {
+        name: 'Page F',
+        uv: 2390,
+        pv: 3800,
+        amt: 2500,
+    },
+    {
+        name: 'Page G',
+        uv: 3490,
+        pv: 4300,
+        amt: 2100,
+    },
+];
+
+export default class Example extends PureComponent {
+    static demoUrl = 'https://codesandbox.io/p/sandbox/tiny-bar-chart-xzyy8g';
+
+
+    render() {
+        return (
+
+            <div className="chart">
+                <div className="chartTop">
+                    <div className="chartTitle">attendance comparison chart</div>
+                    <div className="chartRight">
+                        <input type="checkbox" id="Daily" name="duration" value="Daily" />
+                        <label for="male">Daily</label>
+
+                        <input type="checkbox" id="Weekly" name="duration" value="Weekly" />
+                        <label for="female">Weekly</label>
+
+                        <input type="checkbox" id="Monthly" name="duration" value="Monthly" />
+                        <label for="female">monthly</label>
+                    </div>
+                    <div className="menu">
+                        <FontAwesomeIcon icon={faBars} />
+                    </div>
+                </div>
+
+
+                <div className="chartBottom">
+
+                    <ResponsiveContainer width="100%" height="100%">
+                        <BarChart width={150} height={40} data={data}>
+                            <Bar dataKey="uv" fill="#8884d8" />
+                        </BarChart>
+                    </ResponsiveContainer>
+
+                </div>
+            </div>
+
+        );
+    }
+}

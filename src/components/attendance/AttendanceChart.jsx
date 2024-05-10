@@ -1,6 +1,9 @@
 import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
+import TotalVisitors from '../visitors/TotalVisitors';
+import TotalVehicles from '../vehicles/TotalVehicles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const data = [
     {
@@ -44,18 +47,25 @@ export default class Example extends PureComponent {
 
             <div className="chart">
                 <div className="chartTop">
-                    <div className="chartTitle">vehicles entry statistics</div>
+                    <div className="chartTitle">attendance comparison chart</div>
                     <div className="chartRight">
+                        <input type="checkbox" id="Daily" name="duration" value="Daily" />
+                        <label for="male">Daily</label>
 
-                        <select name="month" id="month" className="month">
-                            <option value="this month">
-                                <span>This Month</span>
-                            </option>
-                        </select>
+                        <input type="checkbox" id="Weekly" name="duration" value="Weekly" />
+                        <label for="female">Weekly</label>
+
+                        <input type="checkbox" id="Monthly" name="duration" value="Monthly" />
+                        <label for="female">monthly</label>
+                    </div>
+                    <div className="menu">
+                        <FontAwesomeIcon icon={faBars} />
                     </div>
                 </div>
 
+
                 <div className="chartBottom">
+
                     <ResponsiveContainer width="100%" height="100%">
                         <LineChart
                             width={500}
@@ -68,7 +78,6 @@ export default class Example extends PureComponent {
                                 bottom: 5,
                             }}
                         >
-
                             <XAxis dataKey="name" />
                             <YAxis />
                             <Tooltip />
@@ -84,4 +93,3 @@ export default class Example extends PureComponent {
         );
     }
 }
-
