@@ -1,8 +1,12 @@
-import { faAngleDown, faAngleRight, faAngleUp, faCar, faChartSimple, faGear, faHouse, faQuestion, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faAddressCard, faAngleDown, faAngleRight, faAngleUp, faBorderAll, faCar, faChartSimple, faGear, faHouse, faQuestion, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
+import { faCalendar } from '@fortawesome/free-regular-svg-icons/faCalendar';
+import { faUsersCog } from '@fortawesome/free-solid-svg-icons/faUsersCog';
+import { faUsersRectangle } from '@fortawesome/free-solid-svg-icons/faUsersRectangle';
+import { faClock } from '@fortawesome/free-regular-svg-icons/faClock';
 
 export default function DashboardLayout() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -45,8 +49,8 @@ export default function DashboardLayout() {
                 <div className="down">
                     <div className="items">
 
-                        <div className="item">
-                            <FontAwesomeIcon icon={faHouse} />
+                        <div className="item" onClick={closeSidebar} >
+                            <FontAwesomeIcon icon={faClock} />
                             <NavLink to='/'>
                                 <span>Dashboard</span>
                             </NavLink>
@@ -54,12 +58,12 @@ export default function DashboardLayout() {
 
                         <div className="dropdown">
                             <div className="item" onClick={() => toggleDropdown('staff')}>
-                                <FontAwesomeIcon icon={faHouse} />
+                                <FontAwesomeIcon icon={faUsersRectangle} />
                                 <span>Staff Mangement</span>
                                 <FontAwesomeIcon icon={toggleIcon('staff')} />
                             </div>
                             {openDropdown === 'staff' && (
-                                <div className="dropdownContent">
+                                <div className="dropdownContent" onClick={closeSidebar}>
                                     <p>dummy staff</p>
                                     <p>dummy staff</p>
                                 </div>
@@ -68,12 +72,12 @@ export default function DashboardLayout() {
 
                         <div className="dropdown">
                             <div className="item" onClick={() => toggleDropdown('attendance')}>
-                                <FontAwesomeIcon icon={faHouse} />
+                                <FontAwesomeIcon icon={faAddressCard} />
                                 <span>attendace management</span>
                                 <FontAwesomeIcon icon={toggleIcon('attendance')} />
                             </div>
                             {openDropdown === 'attendance' && (
-                                <div className="dropdownContent">
+                                <div className="dropdownContent" onClick={closeSidebar}>
                                     <NavLink to='/all-attendance'>
                                         <p>view all attendace</p>
                                     </NavLink>
@@ -83,12 +87,12 @@ export default function DashboardLayout() {
 
                         <div className="dropdown">
                             <div className="item" onClick={() => toggleDropdown('leave')}>
-                                <FontAwesomeIcon icon={faHouse} />
+                                <FontAwesomeIcon icon={faCalendar} />
                                 <span>leave management</span>
                                 <FontAwesomeIcon icon={toggleIcon('leave')} />
                             </div>
                             {openDropdown === 'leave' && (
-                                <div className="dropdownContent">
+                                <div className="dropdownContent" onClick={closeSidebar}>
                                     <p>dummy leave</p>
                                     <p>dummy leave</p>
                                 </div>
@@ -102,7 +106,7 @@ export default function DashboardLayout() {
                                 <FontAwesomeIcon icon={toggleIcon('visitor')} />
                             </div>
                             {openDropdown === 'visitors' && (
-                                <div className="dropdownContent">
+                                <div className="dropdownContent" onClick={closeSidebar}>
                                     <NavLink to='/visitors'>
                                         <p>All visitors</p>
                                     </NavLink>
@@ -119,7 +123,7 @@ export default function DashboardLayout() {
                                 <FontAwesomeIcon icon={toggleIcon('vehicle')} />
                             </div>
                             {openDropdown === 'vehicles' && (
-                                <div className="dropdownContent">
+                                <div className="dropdownContent" onClick={closeSidebar}>
                                     <NavLink to='/vehicles'>
                                         <p>All vehicles</p>
                                     </NavLink>
@@ -132,12 +136,12 @@ export default function DashboardLayout() {
                         </div>
                         <div className="dropdown">
                             <div className="item" onClick={() => toggleDropdown('app')}>
-                                <FontAwesomeIcon icon={faChartSimple} />
+                                <FontAwesomeIcon icon={faBorderAll} />
                                 <span>App</span>
                                 <FontAwesomeIcon icon={toggleIcon('app')} />
                             </div>
                             {openDropdown === 'app' && (
-                                <div className="dropdownContent">
+                                <div className="dropdownContent" onClick={closeSidebar}>
                                     <p>dummy Report</p>
                                     <p>dummy Report</p>
                                 </div>
@@ -150,7 +154,7 @@ export default function DashboardLayout() {
                                 <FontAwesomeIcon icon={toggleIcon('settings')} />
                             </div>
                             {openDropdown === 'settings' && (
-                                <div className="dropdownContent">
+                                <div className="dropdownContent" onClick={closeSidebar}>
                                     <p>dummy Settings</p>
                                     <p>dummy Settings</p>
                                 </div>
