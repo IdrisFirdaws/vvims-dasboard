@@ -40,32 +40,60 @@ const data = [
 ];
 
 export default class Example extends PureComponent {
-    static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v';
+    constructor(props) {
+        super(props);
+        this.state = {
+            selectedCheckbox: null,
+        };
+    }
+
+    handleCheckboxChange = (value) => {
+        this.setState({ selectedCheckbox: value });
+    };
 
     render() {
-        return (
+        const { selectedCheckbox } = this.state;
 
+        return (
             <div className="chart">
                 <div className="chartTop">
                     <div className="chartTitle">attendance comparison chart</div>
-                    <div className="chartRight">
-                        <input type="checkbox" id="Daily" name="duration" value="Daily" />
-                        <label for="male">Daily</label>
+                    <div className='chartRight'>
+                        <input
+                            type="checkbox"
+                            id="Daily"
+                            name="duration"
+                            value="Daily"
+                            checked={selectedCheckbox === "Daily"}
+                            onChange={() => this.handleCheckboxChange("Daily")}
+                        />
+                        <label htmlFor="Daily">Daily</label>
 
-                        <input type="checkbox" id="Weekly" name="duration" value="Weekly" />
-                        <label for="female">Weekly</label>
+                        <input
+                            type="checkbox"
+                            id="Weekly"
+                            name="duration"
+                            value="Weekly"
+                            checked={selectedCheckbox === "Weekly"}
+                            onChange={() => this.handleCheckboxChange("Weekly")}
+                        />
+                        <label htmlFor="Weekly">Weekly</label>
 
-                        <input type="checkbox" id="Monthly" name="duration" value="Monthly" />
-                        <label for="female">monthly</label>
+                        <input
+                            type="checkbox"
+                            id="Monthly"
+                            name="duration"
+                            value="Monthly"
+                            checked={selectedCheckbox === "Monthly"}
+                            onChange={() => this.handleCheckboxChange("Monthly")}
+                        />
+                        <label htmlFor="Monthly">Monthly</label>
                     </div>
                     <div className="menu">
-                        <FontAwesomeIcon icon={faBars} />
+                        <img src="images/menu.png" alt="" />
                     </div>
                 </div>
-
-
                 <div className="chartBottom">
-
                     <ResponsiveContainer width="100%" height="100%">
                         <LineChart
                             width={500}
@@ -82,14 +110,11 @@ export default class Example extends PureComponent {
                             <YAxis />
                             <Tooltip />
                             <Legend />
-                            <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
                             <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
                         </LineChart>
                     </ResponsiveContainer>
-
                 </div>
             </div>
-
         );
     }
 }

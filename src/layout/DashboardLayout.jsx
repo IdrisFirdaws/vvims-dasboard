@@ -79,7 +79,7 @@ export default function DashboardLayout() {
                             {openDropdown === 'attendance' && (
                                 <div className="dropdownContent" onClick={closeSidebar}>
                                     <NavLink to='/all-attendance'>
-                                        <p>view all attendace</p>
+                                        <p>view all attendance</p>
                                     </NavLink>
                                 </div>
                             )}
@@ -162,6 +162,13 @@ export default function DashboardLayout() {
                         </div>
                     </div>
                     <div className="extra">
+                        <img src="images/Ellipse 7.png" alt="" className="ellipse7" />
+                        <img src="images/Ellipse 6.png" alt="" className="ellipse6" />
+                        <img src="images/Ellipse 5.png" alt="" className="ellipse5" />
+                        <img src="images/Ellipse 4.png" alt="" className="ellipse4" />
+                        <img src="images/Ellipse 3.png" alt="" className="ellipse3" />
+                        <img src="images/Ellipse 2.png" alt="" className="ellipse2" />
+                        <img src="images/Ellipse 1.png" alt="" className="ellipse1" />
                         <div className="quest">
                             <FontAwesomeIcon icon={faQuestion} className='help' />
                         </div>

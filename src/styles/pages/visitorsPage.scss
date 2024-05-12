@@ -3,11 +3,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  // display: grid;
   gap: 20px;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-auto-flow: dense;
-  padding: 2% 2% 2% 2%;
+  padding: 0 0 50px 3%;
   background-color: var(--inactive-color);
   z-index: 1;
 

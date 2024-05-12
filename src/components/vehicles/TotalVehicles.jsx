@@ -11,7 +11,7 @@ export default function TotalVehicles() {
     return (
         <div className='vehicles'>
 
-            <div className="top">
+            <div className="dcardtop">
                 <div className="icon">
                     <img src="images/car.png" alt="" />
                 </div>

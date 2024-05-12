@@ -27,7 +27,7 @@ body {
 @import url(pages/dashboard.scss);
 @import url(pages/visitorsPage.scss);
 @import url(pages/vehiclesPage.scss);
-@import url(pages/AllAttendance.scss);
+@import url(pages/AllAttendancePage.scss);
 
 //components
 @import url(components/navbar.scss);
@@ -54,3 +54,4 @@ body {
 @import url(components/attendance/attendancePageCards.scss);
 @import url(components/attendance/attendanceChart.scss);
 @import url(components/attendance/statschart.scss);
+@import url(components/attendance/allAttendance.scss);

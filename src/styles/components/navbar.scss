@@ -63,6 +63,9 @@
           margin-right: 10px;
         }
       }
+      .menu-btn {
+        display: none;
+      }
     }
   }
 }
@@ -71,6 +74,11 @@
   .navbar {
     .center {
       gap: 100px;
+
+      .menu-btn {
+        display: block !important;
+        padding: 0 2px;
+      }
     }
   }
 }

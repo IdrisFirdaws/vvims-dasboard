@@ -7,40 +7,54 @@ import AllVisitors from '../components/visitors/AllVisitors'
 
 export default function VisitorsPage() {
     return (
-        <div className='visitorsPage'>
-            <div className="set1">
-                <div className="box box1">
-                    <img src="images/Ellipse-8.png" alt="" className='ellipse8' />
-                    <img src="images/Ellipse-9.png" alt="" className='ellipse9' />
-                    <img src="images/Ellipse-10.png" alt="" className='ellipse10' />
-                    <img src="images/Ellipse-11.png" alt="" className='ellipse11' />
+        <>
+            <div className="top">
 
-                    <TotalVisitors />
-                </div>
-                <div className="box box2">
-                    <img src="images/Ellipse-8g.png" alt="" className='ellipse8' />
-                    <img src="images/Ellipse-9g.png" alt="" className='ellipse9' />
-                    <img src="images/Ellipse-10g.png" alt="" className='ellipse10' />
-                    <img src="images/Ellipse-11g.png" alt="" className='ellipse11' />
-
-                    <LastMonthVisitors />
-                </div>
-                <div className="box box3">
-                    <img src="images/Ellipse-8r.png" alt="" className='ellipse8' />
-                    <img src="images/Ellipse-9r.png" alt="" className='ellipse9' />
-                    <img src="images/Ellipse-10r.png" alt="" className='ellipse10' />
-                    <img src="images/Ellipse-11r.png" alt="" className='ellipse11' />
-
-                    <DailyAverageVisitors />
+                <div className="label">visitors</div>
+                <div className="down">
+                    <div className="breadcrumbs">
+                        <span>dashboard - </span>
+                        <span>visitors - </span>
+                        <span className="active">all visitors</span>
+                    </div>
                 </div>
             </div>
-            <div className="box box4">
-                <VisitorsChart />
-            </div>
+            <div className='visitorsPage'>
 
-            <div className="box box6">
-                <AllVisitors />
+                <div className="set1">
+                    <div className="box box1">
+                        <img src="images/Ellipse-8.png" alt="" className='ellipse8' />
+                        <img src="images/Ellipse-9.png" alt="" className='ellipse9' />
+                        <img src="images/Ellipse-10.png" alt="" className='ellipse10' />
+                        <img src="images/Ellipse-11.png" alt="" className='ellipse11' />
+
+                        <TotalVisitors />
+                    </div>
+                    <div className="box box2">
+                        <img src="images/Ellipse-8g.png" alt="" className='ellipse8' />
+                        <img src="images/Ellipse-9g.png" alt="" className='ellipse9' />
+                        <img src="images/Ellipse-10g.png" alt="" className='ellipse10' />
+                        <img src="images/Ellipse-11g.png" alt="" className='ellipse11' />
+
+                        <LastMonthVisitors />
+                    </div>
+                    <div className="box box3">
+                        <img src="images/Ellipse-8r.png" alt="" className='ellipse8' />
+                        <img src="images/Ellipse-9r.png" alt="" className='ellipse9' />
+                        <img src="images/Ellipse-10r.png" alt="" className='ellipse10' />
+                        <img src="images/Ellipse-11r.png" alt="" className='ellipse11' />
+
+                        <DailyAverageVisitors />
+                    </div>
+                </div>
+                <div className="box box4">
+                    <VisitorsChart />
+                </div>
+
+                <div className="box box6">
+                    <AllVisitors />
+                </div>
             </div>
-        </div>
+        </>
     )
 }

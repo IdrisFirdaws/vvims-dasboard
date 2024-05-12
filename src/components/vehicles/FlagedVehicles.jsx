@@ -10,7 +10,7 @@ export default function FlagedVehicles() {
 
     return (
         <div className='flaged'>
-            <div className="top">
+            <div className="dcardtop">
                 <div className="icon">
                     <img src="images/smart-car.png" alt="" />
                 </div>

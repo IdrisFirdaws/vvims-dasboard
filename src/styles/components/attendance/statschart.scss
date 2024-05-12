@@ -1,5 +1,5 @@
-.allAttendancePage {
-  .statschart {
+.allAttendacePage {
+  .chart {
     .chartTop {
       display: flex;
       align-items: center;
@@ -20,7 +20,7 @@
         label {
           font-weight: bold;
           input {
-            margin-right: 5px;
+            margin-right: 2px;
           }
 
           &.active {
@@ -28,10 +28,14 @@
           }
         }
 
-        .month {
+        .menu {
           padding: 10px;
           border: 2px solid var(--line-color);
           border-radius: 10px;
+          option {
+            padding: 10px;
+            border-radius: 10px;
+          }
         }
       }
     }
@@ -43,15 +47,23 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .allAttendancePage {
-    .statschart {
+  .allAttendacePage {
+    .chart {
       .chartTop {
+        padding: 10px;
         .chartTitle {
-          font-size: 1.2em;
+          font-size: 1.5em;
         }
+
         .chartRight {
+          gap: 5px;
+          font-size: 0.5em;
+          label {
+            font-size: 0.3em;
+          }
+
           .month {
-            font-size: 0.8em;
+            font-size: 0.3em;
           }
         }
       }

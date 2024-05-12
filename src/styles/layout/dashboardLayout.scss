@@ -3,42 +3,15 @@
   overflow-x: hidden;
   position: relative;
   display: flex;
-  padding: 0 0 0 2%;
+  background-color: var(--inactive-color);
+
   .sidebar {
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // padding: 10px 1% 0 2%;
-    width: 15%;
+    padding: 80px 1% 0 1%;
+    width: 18%;
     background-color: #fff;
     height: 100vh;
     z-index: 1000;
     transition: 0.3s ease;
-    // overflow-x: auto;
-
-    .top {
-      height: 100px;
-      background-color: #fff;
-      padding-top: 70px;
-      .close {
-        display: none;
-      }
-      .user {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        .name {
-          text-transform: uppercase;
-          font-weight: bold;
-        }
-      }
-
-      hr {
-        width: 85%;
-        border: 0.5px solid var(--line-color);
-        margin-left: 0;
-      }
-    }
 
     .down {
       display: flex;
@@ -69,7 +42,9 @@
           }
         }
         .dropdownContent {
+          margin-left: 20px;
           font-size: 0.8em;
+          text-transform: capitalize;
           a {
             text-decoration: none;
             color: inherit;
@@ -91,7 +66,7 @@
         color: #fff;
         border-radius: 10px;
 
-        .ellipse1 {
+        .ellipse7 {
           width: 10%;
           position: absolute;
           bottom: 0;
@@ -99,7 +74,7 @@
           filter: opacity(30%);
         }
 
-        .ellipse2 {
+        .ellipse6 {
           width: 25%;
           position: absolute;
           bottom: 0;
@@ -107,7 +82,7 @@
           filter: opacity(30%);
         }
 
-        .ellipse3 {
+        .ellipse5 {
           width: 35%;
           position: absolute;
           bottom: 0;
@@ -123,7 +98,7 @@
           right: 0;
         }
 
-        .ellipse5 {
+        .ellipse3 {
           width: 55%;
           position: absolute;
           bottom: 0;
@@ -131,7 +106,7 @@
           right: 0;
         }
 
-        .ellipse6 {
+        .ellipse2 {
           width: 65%;
           position: absolute;
           bottom: 0;
@@ -139,7 +114,7 @@
           right: 0;
         }
 
-        .ellipse7 {
+        .ellipse1 {
           width: 75%;
           position: absolute;
           bottom: 0;
@@ -204,23 +179,33 @@
 
   .content {
     position: relative;
-    width: 80%;
-    // height: 100vh;
+    width: 100%;
     z-index: 999;
-    // margin-left: 15%;
 
     .top {
-      height: 20px;
-      padding: 90px 0 20px 10px;
+      margin: 100px 0 30px 3%;
+      padding: 20px 10px;
+      border-radius: 10px;
       background-color: #fff;
-      display: flex;
-      .brand {
+      text-transform: capitalize;
+      .label {
         font-weight: bold;
-        margin-left: 20px;
-        margin-bottom: 5px;
       }
-      .menu-btn {
-        display: none;
+      .down {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .breadcrumbs {
+          width: 50%;
+          .active {
+            color: var(--primary-color);
+          }
+        }
+        .time {
+          justify-self: end;
+          width: 20%;
+        }
       }
     }
   }
@@ -252,7 +237,7 @@
       position: fixed;
       top: 10px;
       left: 0;
-      box-shadow: 0 0 0.9px var(--line-color);
+      box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
 
       &.open {
         display: block;
@@ -267,11 +252,6 @@
     .content {
       margin-right: 0;
       width: 97% !important;
-      .top {
-        .menu-btn {
-          display: block !important;
-        }
-      }
     }
   }
 }

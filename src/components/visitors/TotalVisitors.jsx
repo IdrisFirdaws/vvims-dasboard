@@ -15,7 +15,7 @@ export default function TotalVisitors() {
     return (
         <div className='visitors'>
 
-            <div className="top">
+            <div className="dcardtop">
                 <div className="icon">
                     <img src="images/people.png" alt="" />
                 </div>

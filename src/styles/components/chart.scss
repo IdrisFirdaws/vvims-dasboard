@@ -1,66 +1,70 @@
-.chart {
-  .chartTop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-
-    .chartTitle {
-      font-size: 1.5em;
-      font-weight: bold;
-      text-transform: capitalize;
-    }
-
-    .chartRight {
+.dasboard {
+  .chart {
+    .chartTop {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-size: 0.8em;
-      label {
-        font-weight: bold;
-        input {
-          margin-right: 5px;
-        }
+      justify-content: space-between;
+      padding: 20px;
 
-        &.active {
-          color: var(--primary-color);
-        }
+      .chartTitle {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: capitalize;
       }
 
-      .month {
-        padding: 10px;
-        border: 2px solid var(--line-color);
-        border-radius: 10px;
-        option {
+      .chartRight {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.8em;
+        label {
+          font-weight: bold;
+          input {
+            margin-right: 5px;
+          }
+
+          &.active {
+            color: var(--primary-color);
+          }
+        }
+
+        .month {
           padding: 10px;
+          border: 2px solid var(--line-color);
           border-radius: 10px;
+          option {
+            padding: 10px;
+            border-radius: 10px;
+          }
         }
       }
     }
-  }
 
-  .chartBottom {
-    height: 400px;
+    .chartBottom {
+      height: 400px;
+    }
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .chart {
-    .chartTop {
-      padding: 10px;
-      .chartTitle {
-        font-size: 1.5em;
-      }
-
-      .chartRight {
-        gap: 5px;
-        font-size: 0.5em;
-        label {
-          font-size: 0.3em;
+  .dasboard {
+    .chart {
+      .chartTop {
+        padding: 10px;
+        .chartTitle {
+          font-size: 1.5em;
         }
 
-        .month {
-          font-size: 0.3em;
+        .chartRight {
+          gap: 5px;
+          font-size: 0.5em;
+          label {
+            font-size: 0.3em;
+          }
+
+          .month {
+            font-size: 0.3em;
+          }
         }
       }
     }

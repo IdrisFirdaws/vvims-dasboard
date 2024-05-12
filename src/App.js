@@ -26,12 +26,10 @@ const router = createBrowserRouter(
       <Route path="reset" element={<ResetPassword />} />
 
       <Route path="/" element={<MainLayout />}>
-        <Route path="/" element={<DashboardLayout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="/all-attendance" element={<AllAttendancePage />} />
-          <Route path="/visitors" element={<VisitorsPage />} />
-          <Route path="/vehicles" element={<VehiclesPage />} />
-        </Route>
+        <Route index element={<Dashboard />} />
+        <Route path="/all-attendance" element={<AllAttendancePage />} />
+        <Route path="/visitors" element={<VisitorsPage />} />
+        <Route path="/vehicles" element={<VehiclesPage />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Route>

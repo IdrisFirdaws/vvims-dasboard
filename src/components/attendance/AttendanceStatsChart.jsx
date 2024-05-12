@@ -54,24 +54,16 @@ export default class Example extends PureComponent {
     static demoUrl = 'https://codesandbox.io/p/sandbox/tiny-bar-chart-xzyy8g';
 
 
+
     render() {
         return (
 
             <div className="chart">
                 <div className="chartTop">
-                    <div className="chartTitle">attendance comparison chart</div>
-                    <div className="chartRight">
-                        <input type="checkbox" id="Daily" name="duration" value="Daily" />
-                        <label for="male">Daily</label>
+                    <div className="chartTitle">statistics</div>
 
-                        <input type="checkbox" id="Weekly" name="duration" value="Weekly" />
-                        <label for="female">Weekly</label>
-
-                        <input type="checkbox" id="Monthly" name="duration" value="Monthly" />
-                        <label for="female">monthly</label>
-                    </div>
                     <div className="menu">
-                        <FontAwesomeIcon icon={faBars} />
+                        <img src="images/menu.png" alt="" />
                     </div>
                 </div>
 
