@@ -29,10 +29,42 @@ export default function AllVehicles() {
                 </div>
             </div>
 
+            <table>
+                <th className='heading'>
+                    <td className="headingItem">
+                        <span>Model & color</span>
+                        <FontAwesomeIcon icon={faCaretDown} />
+                    </td>
 
+                    <td className="headingItem sm">
+                        <span>Plate Number</span>
+                        <FontAwesomeIcon icon={faCaretDown} />
+                    </td>
 
+                    <td className="headingItem sm">
+                        <span>Owner</span>
+                        <FontAwesomeIcon icon={faCaretDown} />
+                    </td>
 
-            <VehicleList />
+                    <td className="headingItem time">
+                        <span>Entry Time</span>
+                        <FontAwesomeIcon icon={faCaretDown} />
+                    </td>
+
+                    <td className="headingItem time">
+                        <span>Exit Time</span>
+                        <FontAwesomeIcon icon={faCaretDown} />
+                    </td>
+
+                    <td className="headingItem">
+                        <span>Action</span>
+                        <FontAwesomeIcon icon={faCaretDown} />
+                    </td>
+                </th>
+                <hr />
+
+                <VehicleList />
+            </table>
 
         </div>
     )

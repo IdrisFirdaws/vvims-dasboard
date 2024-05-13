@@ -45,3 +45,26 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .allAttendancePageCards {
+    .cardtop {
+      gap: 5px;
+      .img {
+        width: 20px;
+        height: 15px;
+      }
+    }
+    .bottom {
+      .title {
+        font-size: 0.6em;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+      }
+      .figure {
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+    }
+  }
+}

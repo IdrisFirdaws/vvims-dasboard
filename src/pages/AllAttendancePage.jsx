@@ -57,7 +57,7 @@ export default function AllAttendancePage() {
                 </div>
 
             </div>
-            <div className="allAttendacePage">
+            <div className="allAttendancePage">
                 <div className="box box1">
                     <TotalWorkforce />
                 </div>
@@ -80,7 +80,7 @@ export default function AllAttendancePage() {
                     <AttendanceStatsChart />
                 </div>
                 <div className="box box8">
-                    {/* <AllAttendance /> */}
+                    <AllAttendance />
                 </div>
             </div >
         </>

@@ -21,38 +21,7 @@ export default function VehicleList() {
     return (
         <table className="visItems">
 
-            <th className='heading'>
-                <td className="headingItem">
-                    <span>Model & color</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </td>
 
-                <td className="headingItem sm">
-                    <span>Plate Number</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </td>
-
-                <td className="headingItem sm">
-                    <span>Owner</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </td>
-
-                <td className="headingItem time">
-                    <span>Entry Time</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </td>
-
-                <td className="headingItem time">
-                    <span>Exit Time</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </td>
-
-                <td className="headingItem">
-                    <span>Action</span>
-                    <FontAwesomeIcon icon={faCaretDown} />
-                </td>
-            </th>
-            <hr />
 
             {currentItems.map(vehicle => (
                 <tr className="visItem" key={vehicle.vehicleId}>
