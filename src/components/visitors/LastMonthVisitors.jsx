@@ -8,7 +8,7 @@ export default function LastMonthVisitors() {
     return (
         <div className='flaged'>
 
-            <div className="top">
+            <div className="dcardtop">
                 <div className="icon">
                     <img src="images/people.png" alt="" />
                 </div>

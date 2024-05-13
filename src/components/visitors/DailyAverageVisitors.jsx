@@ -8,7 +8,7 @@ export default function DailyAverageVisitors() {
     return (
         <div className='vehicles'>
 
-            <div className="top">
+            <div className="dcardtop">
                 <div className="icon">
                     <img src="images/people.png" alt="" />
                 </div>
