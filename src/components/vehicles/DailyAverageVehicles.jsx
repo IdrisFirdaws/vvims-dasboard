@@ -15,6 +15,7 @@ export default function DailyAverageVehicles() {
                     <div>Daily average</div>
                     <div>vehicles</div>
                 </div>
+
             </div>
 
             <div className="bottom">

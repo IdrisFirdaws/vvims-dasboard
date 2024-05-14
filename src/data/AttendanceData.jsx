@@ -10,54 +10,64 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 2,
         date: "02, May",
         staff: "Chika Nwankwor",
         id: "MS254d4",
-        dept: "HR/Lagos Island",
+        dept: "accounting/Lagos Island",
         employment: 'full-time',
         status: 'present',
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 3,
         date: "02, May",
         staff: "Chika Nwankwor",
         id: "MS254d4",
-        dept: "HR/Lagos Island",
+        dept: "engineering/Lagos Island",
         employment: 'part-time',
         status: 'present',
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 4,
         date: "02, May",
         staff: "Chika Nwankwor",
         id: "MS254d4",
-        dept: "HR/Lagos Island",
+        dept: "finance/Lagos Island",
         employment: 'full-time',
         status: 'absent',
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 5,
         date: "02, May",
         staff: "Chika Nwankwor",
         id: "MS254d4",
-        dept: "HR/Lagos Island",
+        dept: "marketing/Lagos Island",
         employment: 'part-time',
         status: 'present',
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 6,
@@ -70,6 +80,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 7,
@@ -82,6 +94,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 8,
@@ -94,6 +108,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 9,
@@ -106,6 +122,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 10,
@@ -118,6 +136,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 11,
@@ -130,6 +150,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 12,
@@ -142,6 +164,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 13,
@@ -154,6 +178,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 14,
@@ -166,6 +192,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 15,
@@ -178,6 +206,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
     {
         staffId: 16,
@@ -190,6 +220,8 @@ export const attendanceItem = [
         role: 'manager',
         checkIn: '7:46am',
         checkOut: '5:01pm',
+        phone: '+234 814848832',
+        email: 'melissamckenzie@gmail.com'
     },
 
 ]

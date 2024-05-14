@@ -18,6 +18,9 @@ import Dashboard from "./pages/Dashboard";
 import VisitorsPage from "./pages/VisitorsPage";
 import VehiclesPage from "./pages/VehiclesPage";
 import AllAttendancePage from "./pages/AllAttendancePage";
+import VehiclesAnalyser from "./pages/VehiclesAnalyser";
+import VisitorsAnalyser from "./pages/VisitorAnalyser";
+import Users from "./pages/Users";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,8 +31,14 @@ const router = createBrowserRouter(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Dashboard />} />
         <Route path="/all-attendance" element={<AllAttendancePage />} />
+
+        <Route path="/users" element={<Users />} />
+
         <Route path="/visitors" element={<VisitorsPage />} />
+        <Route path="/visitors-analyser" element={<VisitorsAnalyser />} />
+
         <Route path="/vehicles" element={<VehiclesPage />} />
+        <Route path="/vehicles-analyser" element={<VehiclesAnalyser />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Route>

@@ -17,7 +17,7 @@
 
     .ellipse8 {
       position: absolute;
-      top: 0;
+      listtop: 0;
       right: 0;
       z-index: 999;
       width: 15%;
@@ -74,6 +74,24 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .visitorsPage {
+    .set1 {
+      width: 90%;
+      .box1,
+      .box2,
+      .box3 {
+        width: 100%;
+      }
+    }
+
+    .box4,
+    .box5 {
+      width: 91%;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .visitorsPage {
     .set1 {
@@ -88,85 +106,6 @@
     .box4,
     .box5 {
       width: 90%;
-    }
-  }
-}
-
-.visitorsPage {
-  .visitors,
-  .vehicles,
-  .flaged {
-    z-index: 1;
-    position: relative;
-    display: flex;
-    // flex-direction: column;
-    flex-wrap: wrap;
-    flex-direction: row;
-    // gap: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    .dcardtop {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      font-size: 2em;
-      font-weight: bold;
-      text-transform: capitalize;
-      padding-top: 50px !important;
-      margin-bottom: 15px;
-      font-size: 1.7em;
-      width: 250px;
-    }
-
-    .bottom {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      margin: 30px 0 0 0;
-
-      .numb {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-
-        .figure {
-          font-size: 4em;
-          font-weight: bold;
-        }
-
-        .percent {
-          display: none;
-        }
-      }
-    }
-
-    .down {
-      font-size: 0.8em;
-      padding: 0 0 0 40px;
-      span {
-        color: var(--green);
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .visitorsPage {
-    .visitors,
-    .vehicles,
-    .flaged {
-      .top {
-        gap: 10px;
-        align-items: center;
-
-        font-size: 1.2em;
-        width: 150px;
-        .icon {
-          background-color: var(--primary-color);
-          border-radius: 50%;
-          padding: 8px 10px;
-          color: #fff;
-        }
-      }
     }
   }
 }
@@ -234,12 +173,13 @@
 
 .visitorsPage {
   .allVisitors {
-    .top {
+    .listTop {
       display: flex;
       align-items: start;
       justify-content: space-between;
       margin: 0;
       padding: 30px 2%;
+      gap: 10px;
       .right {
         display: flex;
         gap: 20px;
@@ -277,13 +217,16 @@
         }
       }
 
-      .button {
-        padding: 10px;
-        background-color: var(--green);
-        border-radius: 10px;
-        color: #fff;
-        span {
-          margin-left: 5px;
+      .buttons {
+        display: flex;
+        gap: 5px;
+        .print {
+          padding: 5px 10px;
+          background-color: var(--primary-color);
+          color: #fff;
+          border: none;
+          outline: none;
+          cursor: pointer;
         }
       }
     }
@@ -310,7 +253,7 @@
 @media screen and (max-width: 1024px) {
   .visitorsPage {
     .allVisitors {
-      .top {
+      .listTop {
         .right {
           .visTitle {
             font-size: 1.2em;
@@ -332,26 +275,56 @@
 @media screen and (max-width: 600px) {
   .visitorsPage {
     .allVisitors {
-      .top {
+      .listTop {
+        flex-wrap: wrap;
         .right {
-          flex-direction: column;
-          gap: 50px;
+          gap: 10px;
+          .visTitle {
+            font-size: 0.8em !important;
+          }
           .searchbar {
-            display: none;
+            .input {
+              display: flex;
+              gap: 10px;
+              padding: 10px;
+              input {
+                margin-left: 0;
+                background-color: var(--line-color);
+                border: none;
+                outline: none;
+              }
+            }
+
+            select {
+              display: none;
+            }
           }
         }
 
         .button {
-          display: none;
+          padding: 10px;
+          background-color: var(--green);
+          border-radius: 10px;
+          color: #fff;
+          span {
+            margin-left: 5px;
+          }
         }
       }
 
-      .heading {
+      .button {
         display: none;
       }
-      hr {
+    }
+
+    .heading {
+      display: none;
+      .sm {
         display: none;
       }
+    }
+    hr {
+      display: none;
     }
   }
 }

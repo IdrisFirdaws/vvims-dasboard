@@ -1,4 +1,4 @@
-.allAttendancePage {
+.usersPage {
   .allVisitors {
     .listTop {
       display: flex;
@@ -6,17 +6,38 @@
       justify-content: space-between;
       margin: 0;
       padding: 30px 2%;
+      gap: 10px;
+
+      .buttons {
+        display: flex;
+        gap: 5px;
+        .print {
+          padding: 5px 10px;
+          background-color: var(--primary-color);
+          color: #fff;
+          border: none;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+
       .right {
         display: flex;
         gap: 20px;
         align-items: center;
-        .visTitle {
-          font-size: 1.2em;
-          font-weight: bold;
-          text-transform: capitalize;
-          width: fit-content;
-          margin-bottom: 0;
+        .buttons {
+          display: flex;
+          gap: 5px;
+          .print {
+            padding: 5px 10px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+          }
         }
+
         .searchbar {
           display: flex;
           align-items: center;
@@ -43,35 +64,6 @@
             border-radius: 10px;
             cursor: pointer;
           }
-
-          .datePickerContainer {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            background-color: #fff;
-            border: 1px solid var(--line-color);
-            padding: 0 10px;
-            border-radius: 10px;
-            cursor: pointer;
-            .select {
-              border: none;
-              outline: none;
-              padding: 9px 0;
-            }
-          }
-        }
-      }
-
-      .buttons {
-        display: flex;
-        gap: 5px;
-        .print {
-          padding: 5px 10px;
-          background-color: var(--primary-color);
-          color: #fff;
-          border: none;
-          outline: none;
-          cursor: pointer;
         }
       }
     }
@@ -95,13 +87,7 @@
 
       .visItem {
         width: 100%;
-        .extra,
-        .present,
-        .absent,
-        .late,
-        .part-time,
-        .full-time {
-          // width: 100%;
+        .extra {
           text-transform: capitalize;
           font-size: 0.8em;
           padding: 10px;
@@ -111,41 +97,34 @@
           span {
             margin-left: 5px;
           }
+          &.action {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            padding: 11px 10px;
+            .edit {
+              color: green;
+            }
+            .del {
+              color: red;
+            }
+          }
         }
-        .date,
-        .status,
-        .present,
-        .absent,
-        .late,
+
         .role,
-        .check,
-        .id {
+        .id,
+        .action {
           width: 100px;
         }
-        .emp,
-        .full-time,
-        .part-time {
-          width: 150px;
+        .phone {
+          width: 200px;
         }
         .staff {
           width: 250px;
         }
-
-        .dept {
-          width: 300px;
-        }
-        .full-time {
-          color: #f811f8;
-        }
-        .present {
-          color: var(--green);
-        }
-        .part-time,
-        .absent {
-          color: var(--red);
-        }
-        .late {
-          color: #b8b806;
+        .dept,
+        .email {
+          width: 350px;
         }
       }
     }
@@ -153,7 +132,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .allAttendancePage {
+  .usersPage {
     .allVisitors {
       .listTop {
         .buttons {
@@ -178,7 +157,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .allAttendancePage {
+  .usersPage {
     .allVisitors {
       .listTop {
         padding: 20px 2%;
@@ -213,7 +192,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .allAttendancePage {
+  .usersPage {
     .allVisitors {
       .listTop {
         .right {

@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TotalVisitors from '../components/visitors/TotalVisitors'
 import LastMonthVisitors from '../components/visitors/LastMonthVisitors'
 import DailyAverageVisitors from '../components/visitors/DailyAverageVisitors'
 import VisitorsChart from '../components/visitors/VisitorsChart'
 import AllVisitors from '../components/visitors/AllVisitors'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import AddVisitorModal from '../components/visitors/AddVisitorModal'
 
 export default function VisitorsPage() {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+
     return (
         <>
             <div className="top">
@@ -17,8 +28,15 @@ export default function VisitorsPage() {
                         <span>visitors - </span>
                         <span className="active">all visitors</span>
                     </div>
+
+                    <div className="btn" onClick={openModal}>
+                        <FontAwesomeIcon icon={faPlus} />
+                        <span>add new visitor</span>
+                    </div>
                 </div>
             </div>
+
+
             <div className='visitorsPage'>
 
                 <div className="set1">
@@ -55,6 +73,9 @@ export default function VisitorsPage() {
                     <AllVisitors />
                 </div>
             </div>
+            {/* Render the modal if isModalOpen is true */}
+            {isModalOpen && <AddVisitorModal onClose={() => setIsModalOpen(false)} />}
+
         </>
     )
 }

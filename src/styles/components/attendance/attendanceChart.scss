@@ -22,20 +22,6 @@
           input {
             margin-right: 2px;
           }
-
-          &.active {
-            color: var(--primary-color);
-          }
-        }
-
-        .menu {
-          padding: 10px;
-          border: 2px solid var(--line-color);
-          border-radius: 10px;
-          option {
-            padding: 10px;
-            border-radius: 10px;
-          }
         }
       }
     }
@@ -69,6 +55,33 @@
 
       .chartBottom {
         height: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .allAttendancePage {
+    .chart {
+      .chartTop {
+        padding: 10px;
+        flex-wrap: wrap;
+        .chartTitle {
+          font-size: 1em !important;
+        }
+
+        .chartRight {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          gap: 2px;
+          label {
+            font-size: 0.4em;
+          }
+        }
+        .menu {
+          display: none !important;
+        }
       }
     }
   }

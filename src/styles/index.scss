@@ -10,6 +10,7 @@
   --light-red: #f8d5d3;
   --blue: #718ebf;
 
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   --font: "Montserrat", sans-serif;
 }
 
@@ -28,12 +29,15 @@ body {
 @import url(pages/visitorsPage.scss);
 @import url(pages/vehiclesPage.scss);
 @import url(pages/AllAttendancePage.scss);
+@import url(pages/usersPage.scss);
 
 //components
 @import url(components/navbar.scss);
 @import url(components/dashboardCards.scss);
 @import url(components/chart.scss);
 @import url(components/pagination.scss);
+@import url(components/smallapageCards.scss);
+@import url(components/modal.scss);
 
 //visitors
 @import url(components/visitors/allVisitors.scss);
@@ -53,5 +57,8 @@ body {
 //attendance
 @import url(components/attendance/attendancePageCards.scss);
 @import url(components/attendance/attendanceChart.scss);
-@import url(components/attendance/statschart.scss);
 @import url(components/attendance/allAttendance.scss);
+
+//users
+
+@import url(components/users/allUsers.scss);

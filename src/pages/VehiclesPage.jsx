@@ -5,7 +5,9 @@ import AllVehicles from '../components/vehicles/AllVehicles'
 import VehiclesChart from '../components/vehicles/VehiclesChart'
 import WatchListVehicles from '../components/vehicles/WatchList'
 import VehiclesAlert from '../components/vehicles/VehiclesAlert'
+
 export default function VehiclesPage() {
+
     return (
         <>
             <div className="top">

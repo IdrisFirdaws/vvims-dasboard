@@ -1,9 +1,9 @@
+
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faCalendarAlt, faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import AttendanceList from './AttendanceList';
 
 // Importing necessary dependencies
 import { saveAs } from 'file-saver';
@@ -11,10 +11,11 @@ import { toBlob } from 'html-to-image';
 import { jsPDF } from "jspdf";
 import "jspdf-autotable";
 import { generateCsv } from 'export-to-csv';
+import UsersList from './UsersList';
 
 
-export default function AllAttendance() {
-    const [startDate, setStartDate] = useState(new Date());
+export default function AllUsers() {
+
 
     const handlePrint = async () => {
         const element = document.getElementById("contentToPrint");
@@ -44,11 +45,17 @@ export default function AllAttendance() {
         saveAs(blob, "dummy_content.csv");
     };
 
+
     return (
         <div className='allVisitors'>
             <div className="listTop">
+                <div className="buttons">
+                    <button className='print' onClick={handlePrint}>Print</button>
+                    <button className='print' onClick={handleDownloadPDF}>PDF</button>
+                    <button className='print' onClick={handleDownloadExcel}>Excel</button>
+                    <button className='print' onClick={handleDownloadCSV}>CSV</button>
+                </div>
                 <div className="right">
-                    <div className="visTitle">All attendance</div>
                     <div className="searchbar">
                         <div className="input">
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
@@ -60,32 +67,15 @@ export default function AllAttendance() {
                             </select>
 
                         </div>
-                        <div className="datePickerContainer">
-                            <FontAwesomeIcon icon={faCalendarAlt} />
-                            <DatePicker
-                                selected={startDate}
-                                onChange={date => setStartDate(date)}
-                                dateFormat="dd, MMM yyyy"
-                                className='select'
-                            />
-                            <FontAwesomeIcon icon={faAngleDown} />
-                        </div>
+
                     </div>
                 </div>
-                <div className="buttons">
-                    <button className='print' onClick={handlePrint}>Print</button>
-                    <button className='print' onClick={handleDownloadPDF}>PDF</button>
-                    <button className='print' onClick={handleDownloadExcel}>Excel</button>
-                    <button className='print' onClick={handleDownloadCSV}>CSV</button>
-                </div>
+
             </div>
 
             <div className="dummyData" id="contentToPrint">
-
-                <AttendanceList />
+                <UsersList />
             </div>
-
-
         </div>
-    );
+    )
 }

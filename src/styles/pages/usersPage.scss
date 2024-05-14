@@ -1,0 +1,19 @@
+.usersPage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 0 50px 3%;
+  background-color: var(--inactive-color);
+  z-index: 1;
+
+  .box {
+    padding: 0 10px 15px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    height: fit-content;
+    width: 90%;
+  }
+}

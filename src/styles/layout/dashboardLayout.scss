@@ -7,10 +7,10 @@
 
   .sidebar {
     padding: 80px 1% 0 1%;
-    width: 18%;
+    width: 15%;
     background-color: #fff;
-    height: 100vh;
-    z-index: 1000;
+    // height: 100vh;
+    z-index: 100;
     transition: 0.3s ease;
 
     .down {
@@ -179,13 +179,13 @@
 
   .content {
     position: relative;
-    width: 100%;
-    z-index: 999;
+    width: 83%;
+    z-index: 10;
 
     .top {
       margin: 100px 0 30px 3%;
-      padding: 20px 10px;
-      border-radius: 10px;
+      padding: 20px 20px 20px 10px;
+      border-radius: 10px 0 0 10px;
       background-color: #fff;
       text-transform: capitalize;
       .label {
@@ -206,6 +206,19 @@
           justify-self: end;
           width: 20%;
         }
+        .btn {
+          justify-self: end;
+          background-color: var(--green);
+          padding: 10px;
+          color: #fff;
+          margin-right: 20px;
+          border-radius: 10px;
+          text-transform: capitalize;
+
+          span {
+            margin-left: 5px;
+          }
+        }
       }
     }
   }
@@ -214,6 +227,7 @@
 @media screen and (max-width: 1024px) {
   .dashboard {
     .sidebar {
+      height: 100vh;
       .dropdownContent {
         font-size: 0.6em !important;
       }

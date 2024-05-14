@@ -1,0 +1,87 @@
+.addItemModal {
+  padding-top: 20px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0;
+  z-index: 1000 !important;
+  .modalWrapper {
+    background-color: #fff;
+    width: 45%;
+    border-radius: 10px;
+    hr {
+      border: 0.5px solid var(--line-color);
+    }
+    .modalTop {
+      padding: 10px 20px 0 20px;
+      display: flex;
+      justify-content: space-between;
+      .title {
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      .closeModal {
+        color: var(--blue);
+        padding: 1px 2px;
+        box-shadow: var(--shadow);
+      }
+    }
+    form {
+      padding: 0 50px;
+      display: flex;
+      justify-content: start;
+      gap: 20px 50px;
+      flex-wrap: wrap;
+      align-items: start;
+      .input {
+        width: 40%;
+        border: 1px solid var(--line-color);
+        display: flex;
+        flex-direction: column;
+        padding: 2px 10px;
+        border-radius: 10px;
+        label {
+          text-transform: capitalize;
+          font-size: 0.9em;
+        }
+        input,
+        select,
+        textarea {
+          border: none;
+          outline: none;
+          cursor: pointer;
+          color: var(--text-light);
+        }
+      }
+    }
+    .modalBottom {
+      padding: 0 80px 10px 20px;
+      display: flex;
+      justify-content: end;
+      gap: 10px;
+      button {
+        padding: 2px 15px;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 6px;
+        &.close {
+          background-color: #cfcf2c;
+          border: 1px solid #cfcf2c;
+        }
+        &.add {
+          background-color: #0baf0b;
+          border: 1px solid #0baf0b;
+        }
+        &.create {
+          background-color: var(--red);
+          border: 1px solid var(--red);
+        }
+      }
+    }
+  }
+}

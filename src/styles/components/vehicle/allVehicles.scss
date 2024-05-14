@@ -1,11 +1,12 @@
 .vehiclesPage {
   .allVisitors {
-    .top {
+    .listTop {
       display: flex;
-      align-items: start;
+      align-items: center;
       justify-content: space-between;
       margin: 0;
       padding: 30px 2%;
+      gap: 10px;
       .right {
         display: flex;
         gap: 20px;
@@ -45,13 +46,16 @@
         }
       }
 
-      .button {
-        padding: 10px;
-        background-color: var(--green);
-        border-radius: 10px;
-        color: #fff;
-        span {
-          margin-left: 5px;
+      .buttons {
+        display: flex;
+        gap: 5px;
+        .print {
+          padding: 5px 10px;
+          background-color: var(--primary-color);
+          color: #fff;
+          border: none;
+          outline: none;
+          cursor: pointer;
         }
       }
     }
@@ -246,7 +250,8 @@
 @media screen and (max-width: 600px) {
   .vehiclesPage {
     .allVisitors {
-      .top {
+      .listTop {
+        flex-wrap: wrap;
         .right {
           gap: 10px;
           .visTitle {
