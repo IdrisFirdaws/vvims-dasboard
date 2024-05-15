@@ -1,0 +1,205 @@
+.allAttendancePage .allVisitors .listTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 30px 2%;
+}
+.allAttendancePage .allVisitors .listTop .right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.allAttendancePage .allVisitors .listTop .right .visTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0;
+}
+.allAttendancePage .allVisitors .listTop .right .searchbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.allAttendancePage .allVisitors .listTop .right .searchbar .input {
+  padding: 10px 50px 10px 20px;
+  border-radius: 10px;
+  background-color: var(--line-color);
+  color: var(--text-light);
+  display: flex;
+  cursor: pointer;
+}
+.allAttendancePage .allVisitors .listTop .right .searchbar .input input {
+  margin-left: 10px;
+  background-color: var(--line-color);
+  border: none;
+  outline: none;
+}
+.allAttendancePage .allVisitors .listTop .right .searchbar select {
+  background-color: #fff;
+  border: 1px solid var(--line-color);
+  padding: 9px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.allAttendancePage .allVisitors .listTop .right .searchbar .datePickerContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #fff;
+  border: 1px solid var(--line-color);
+  padding: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.allAttendancePage .allVisitors .listTop .right .searchbar .datePickerContainer .select {
+  border: none;
+  outline: none;
+  padding: 9px 0;
+}
+.allAttendancePage .allVisitors .listTop .buttons {
+  display: flex;
+  gap: 5px;
+}
+.allAttendancePage .allVisitors .listTop .buttons .print {
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.allAttendancePage .allVisitors .visItems {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+}
+.allAttendancePage .allVisitors .visItems td {
+  border: 1px solid var(--line-color);
+}
+.allAttendancePage .allVisitors .visItems .headingItem {
+  color: var(--text-color);
+  font-size: 0.8em;
+  width: 100%;
+  padding: 10px;
+}
+.allAttendancePage .allVisitors .visItems .visItem {
+  width: 100%;
+}
+.allAttendancePage .allVisitors .visItems .visItem .item,
+.allAttendancePage .allVisitors .visItems .visItem .present,
+.allAttendancePage .allVisitors .visItems .visItem .absent,
+.allAttendancePage .allVisitors .visItems .visItem .late,
+.allAttendancePage .allVisitors .visItems .visItem .part-time,
+.allAttendancePage .allVisitors .visItems .visItem .full-time {
+  text-transform: capitalize;
+  font-size: 0.8em;
+  padding: 10px;
+}
+.allAttendancePage .allVisitors .visItems .visItem .item .icon,
+.allAttendancePage .allVisitors .visItems .visItem .present .icon,
+.allAttendancePage .allVisitors .visItems .visItem .absent .icon,
+.allAttendancePage .allVisitors .visItems .visItem .late .icon,
+.allAttendancePage .allVisitors .visItems .visItem .part-time .icon,
+.allAttendancePage .allVisitors .visItems .visItem .full-time .icon {
+  color: var(--primary-color);
+}
+.allAttendancePage .allVisitors .visItems .visItem .item span,
+.allAttendancePage .allVisitors .visItems .visItem .present span,
+.allAttendancePage .allVisitors .visItems .visItem .absent span,
+.allAttendancePage .allVisitors .visItems .visItem .late span,
+.allAttendancePage .allVisitors .visItems .visItem .part-time span,
+.allAttendancePage .allVisitors .visItems .visItem .full-time span {
+  margin-left: 5px;
+}
+.allAttendancePage .allVisitors .visItems .visItem .date,
+.allAttendancePage .allVisitors .visItems .visItem .status,
+.allAttendancePage .allVisitors .visItems .visItem .present,
+.allAttendancePage .allVisitors .visItems .visItem .absent,
+.allAttendancePage .allVisitors .visItems .visItem .late,
+.allAttendancePage .allVisitors .visItems .visItem .role,
+.allAttendancePage .allVisitors .visItems .visItem .check,
+.allAttendancePage .allVisitors .visItems .visItem .id {
+  width: 100px;
+}
+.allAttendancePage .allVisitors .visItems .visItem .emp,
+.allAttendancePage .allVisitors .visItems .visItem .full-time,
+.allAttendancePage .allVisitors .visItems .visItem .part-time {
+  width: 150px;
+}
+.allAttendancePage .allVisitors .visItems .visItem .staff {
+  width: 250px;
+}
+.allAttendancePage .allVisitors .visItems .visItem .dept {
+  width: 300px;
+}
+.allAttendancePage .allVisitors .visItems .visItem .full-time {
+  color: #f811f8;
+}
+.allAttendancePage .allVisitors .visItems .visItem .present {
+  color: var(--green);
+}
+.allAttendancePage .allVisitors .visItems .visItem .part-time,
+.allAttendancePage .allVisitors .visItems .visItem .absent {
+  color: var(--red);
+}
+.allAttendancePage .allVisitors .visItems .visItem .late {
+  color: #b8b806;
+}
+
+@media screen and (max-width: 1024px) {
+  .allAttendancePage .allVisitors .listTop .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .allAttendancePage .allVisitors .visItems .visItem .role,
+  .allAttendancePage .allVisitors .visItems .visItem .dept {
+    display: none;
+  }
+  .allAttendancePage .allVisitors .visItems .visItem .staff {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .allAttendancePage .allVisitors .listTop {
+    padding: 20px 2%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .allAttendancePage .allVisitors .listTop .right .visTitle {
+    font-size: 1em;
+  }
+  .allAttendancePage .allVisitors .listTop .right .searchbar .input {
+    padding: 10px 20px 10px 20px;
+  }
+  .allAttendancePage .allVisitors .listTop .right .searchbar .datePickerContainer {
+    padding: 0 4px;
+    cursor: pointer;
+  }
+  .allAttendancePage .allVisitors .visItems .emp,
+  .allAttendancePage .allVisitors .visItems .full-time,
+  .allAttendancePage .allVisitors .visItems .part-time {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .allAttendancePage .allVisitors .listTop .right {
+    flex-wrap: wrap;
+  }
+  .allAttendancePage .allVisitors .listTop .right .searchbar {
+    flex-wrap: wrap;
+  }
+  .allAttendancePage .allVisitors .visItems .check,
+  .allAttendancePage .allVisitors .visItems .id,
+  .allAttendancePage .allVisitors .visItems .status,
+  .allAttendancePage .allVisitors .visItems .present,
+  .allAttendancePage .allVisitors .visItems .absent,
+  .allAttendancePage .allVisitors .visItems .late {
+    display: none;
+  }
+}/*# sourceMappingURL=allAttendance.css.map */

@@ -1,0 +1,68 @@
+.allAttendancePage .chart .chartTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.allAttendancePage .chart .chartTop .chartTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.allAttendancePage .chart .chartTop .chartRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8em;
+}
+.allAttendancePage .chart .chartTop .chartRight label {
+  font-weight: bold;
+}
+.allAttendancePage .chart .chartTop .chartRight label input {
+  margin-right: 2px;
+}
+.allAttendancePage .chart .chartBottom {
+  height: 250px;
+}
+
+@media screen and (max-width: 1024px) {
+  .allAttendancePage .chart .chartTop {
+    display: flex;
+  }
+  .allAttendancePage .chart .chartTop .chartTitle {
+    font-size: 0.8em;
+  }
+  .allAttendancePage .chart .chartTop .chartRight {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2em;
+  }
+  .allAttendancePage .chart .chartTop .chartRight .menu {
+    display: none;
+  }
+  .allAttendancePage .chart .chartBottom {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .allAttendancePage .chart .chartTop {
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .allAttendancePage .chart .chartTop .chartTitle {
+    font-size: 1em !important;
+  }
+  .allAttendancePage .chart .chartTop .chartRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    gap: 2px;
+  }
+  .allAttendancePage .chart .chartTop .chartRight label {
+    font-size: 0.4em;
+  }
+  .allAttendancePage .chart .chartTop .menu {
+    display: none !important;
+  }
+}/*# sourceMappingURL=attendanceChart.css.map */

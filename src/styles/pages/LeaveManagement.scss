@@ -1,4 +1,4 @@
-.allAttendancePage {
+.leaveMangementPage {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -19,23 +19,17 @@
   .box2,
   .box3,
   .box4,
-  .box5 {
-    width: 15%;
-  }
-
+  .box5,
   .box6 {
-    width: 60%;
+    width: 27.5%;
   }
   .box7 {
-    width: 26%;
-  }
-  .box8 {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .allAttendancePage {
+  .leaveMangementPage {
     .box1,
     .box2,
     .box3,
@@ -51,29 +45,24 @@
 }
 
 @media screen and (max-width: 900px) {
-  .allAttendancePage {
+  .leaveMangementPage {
     .box1,
     .box2,
     .box3,
     .box4,
-    .box5 {
-      width: 13.5%;
+    .box5,
+    .box6 {
+      width: 25%;
     }
 
-    .box6 {
-      width: 55%;
-    }
     .box7 {
-      width: 28%;
-    }
-    .box8 {
       width: 89%;
     }
   }
 }
 
 @media screen and (max-width: 600px) {
-  .allAttendancePage {
+  .leaveMangementPage {
     .box1,
     .box2,
     .box3,

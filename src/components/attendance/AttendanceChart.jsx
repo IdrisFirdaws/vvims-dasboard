@@ -1,9 +1,5 @@
 import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import TotalVisitors from '../visitors/TotalVisitors';
-import TotalVehicles from '../vehicles/TotalVehicles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const data = [
     {

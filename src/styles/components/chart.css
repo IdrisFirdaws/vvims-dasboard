@@ -1,0 +1,57 @@
+.dasboard .chart .chartTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.dasboard .chart .chartTop .chartTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.dasboard .chart .chartTop .chartRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8em;
+}
+.dasboard .chart .chartTop .chartRight label {
+  font-weight: bold;
+}
+.dasboard .chart .chartTop .chartRight label input {
+  margin-right: 5px;
+}
+.dasboard .chart .chartTop .chartRight label.active {
+  color: var(--primary-color);
+}
+.dasboard .chart .chartTop .chartRight .month {
+  padding: 10px;
+  border: 2px solid var(--line-color);
+  border-radius: 10px;
+}
+.dasboard .chart .chartTop .chartRight .month option {
+  padding: 10px;
+  border-radius: 10px;
+}
+.dasboard .chart .chartBottom {
+  height: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+  .dasboard .chart .chartTop {
+    padding: 10px;
+  }
+  .dasboard .chart .chartTop .chartTitle {
+    font-size: 1.5em;
+  }
+  .dasboard .chart .chartTop .chartRight {
+    gap: 5px;
+    font-size: 0.5em;
+  }
+  .dasboard .chart .chartTop .chartRight label {
+    font-size: 0.3em;
+  }
+  .dasboard .chart .chartTop .chartRight .month {
+    font-size: 0.3em;
+  }
+}/*# sourceMappingURL=chart.css.map */

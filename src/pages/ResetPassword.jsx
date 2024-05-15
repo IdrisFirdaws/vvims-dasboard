@@ -1,7 +1,7 @@
 import React from 'react'
 import LoginSidebar from '../components/LoginSidebar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faEye } from '@fortawesome/free-regular-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { Link } from 'react-router-dom'
 
 export default function ResetPassword() {

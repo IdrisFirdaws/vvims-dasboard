@@ -1,0 +1,85 @@
+.dasboard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 0 50px 3%;
+  background-color: var(--inactive-color);
+  z-index: 1;
+}
+.dasboard .box {
+  padding: 0 10px 15px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.dasboard .box .ellipse8 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 15%;
+}
+.dasboard .ellipse9 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 18%;
+}
+.dasboard .ellipse10 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 20%;
+}
+.dasboard .ellipse11 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 22%;
+}
+.dasboard .box1,
+.dasboard .box2,
+.dasboard .box3 {
+  width: 28%;
+}
+.dasboard .box4 {
+  width: calc(56% + 40px);
+}
+.dasboard .box5 {
+  width: 28%;
+}
+.dasboard .box6 {
+  width: calc(85% + 70px);
+}
+
+@media screen and (max-width: 1024px) {
+  .dasboard {
+    padding: 20px 3%;
+    width: 100%;
+  }
+  .dasboard .box1,
+  .dasboard .box2,
+  .dasboard .box3 {
+    width: 28%;
+  }
+  .dasboard .box4,
+  .dasboard .box5 {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .dasboard .box1,
+  .dasboard .box2,
+  .dasboard .box3,
+  .dasboard .box4,
+  .dasboard .box5 {
+    width: 98%;
+  }
+}/*# sourceMappingURL=dashboard.css.map */

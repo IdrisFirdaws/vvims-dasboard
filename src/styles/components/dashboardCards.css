@@ -1,0 +1,181 @@
+.visitors {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.visitors .dcardtop {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-top: 50px !important;
+  margin-bottom: 15px;
+}
+.visitors .dcardtop .icon {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 15px 20px;
+  color: #fff;
+}
+.visitors .dcardtop .title {
+  text-transform: capitalize;
+  font-size: 0.8em;
+}
+.visitors .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.visitors .bottom .numb {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.visitors .bottom .numb .figure {
+  font-size: 4em;
+  font-weight: bold;
+}
+.visitors .bottom .numb .percent {
+  background-color: var(--light-green);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  color: var(--green);
+  font-weight: bold;
+}
+.visitors .bottom .numb .percent span {
+  margin-right: 10px;
+}
+.visitors .down {
+  font-size: 0.8em;
+}
+.visitors .down span {
+  color: var(--green);
+}
+
+.vehicles {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.vehicles .dcardtop {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-top: 50px !important;
+  margin-bottom: 15px;
+}
+.vehicles .dcardtop .icon {
+  background-color: var(--green);
+  border-radius: 50%;
+  padding: 15px 20px;
+  color: #fff;
+}
+.vehicles .dcardtop .title {
+  text-transform: capitalize;
+  font-size: 0.8em;
+}
+.vehicles .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.vehicles .bottom .numb {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.vehicles .bottom .numb .figure {
+  font-size: 4em;
+  font-weight: bold;
+}
+.vehicles .bottom .numb .percent {
+  background-color: var(--light-red);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  color: var(--red);
+  font-weight: bold;
+}
+.vehicles .bottom .numb .percent span {
+  margin-right: 10px;
+}
+.vehicles .down {
+  font-size: 0.8em;
+}
+.vehicles .down span {
+  color: var(--red);
+}
+
+.flaged {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.flaged .dcardtop {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-top: 50px !important;
+  margin-bottom: 15px;
+}
+.flaged .dcardtop .icon {
+  background-color: var(--red);
+  border-radius: 50%;
+  padding: 15px 20px;
+  color: #fff;
+}
+.flaged .dcardtop .title {
+  text-transform: capitalize;
+  font-size: 0.8em;
+}
+.flaged .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.flaged .bottom .numb {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.flaged .bottom .numb .figure {
+  font-size: 4em;
+  font-weight: bold;
+}
+.flaged .bottom .numb .percent {
+  background-color: var(--light-green);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  color: var(--green);
+  font-weight: bold;
+}
+.flaged .bottom .numb .percent span {
+  margin-right: 10px;
+}
+.flaged .down {
+  font-size: 0.8em;
+}
+.flaged .down span {
+  color: var(--green);
+}
+
+@media screen and (max-width: 1024px) {
+  .visitors .title,
+  .vehicles .title,
+  .flaged .title {
+    font-size: 0.6em;
+  }
+}/*# sourceMappingURL=dashboardCards.css.map */

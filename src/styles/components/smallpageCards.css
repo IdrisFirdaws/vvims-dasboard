@@ -1,0 +1,142 @@
+.visitorsPage .visitors,
+.visitorsPage .vehicles,
+.visitorsPage .flaged,
+.vehiclesPage .visitors,
+.vehiclesPage .vehicles,
+.vehiclesPage .flaged {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.visitorsPage .visitors .dcardtop,
+.visitorsPage .vehicles .dcardtop,
+.visitorsPage .flaged .dcardtop,
+.vehiclesPage .visitors .dcardtop,
+.vehiclesPage .vehicles .dcardtop,
+.vehiclesPage .flaged .dcardtop {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-top: 50px !important;
+  font-size: 1.7em;
+  width: 70%;
+}
+.visitorsPage .visitors .bottom,
+.visitorsPage .vehicles .bottom,
+.visitorsPage .flaged .bottom,
+.vehiclesPage .visitors .bottom,
+.vehiclesPage .vehicles .bottom,
+.vehiclesPage .flaged .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 30px 0 0 0;
+}
+.visitorsPage .visitors .bottom .numb,
+.visitorsPage .vehicles .bottom .numb,
+.visitorsPage .flaged .bottom .numb,
+.vehiclesPage .visitors .bottom .numb,
+.vehiclesPage .vehicles .bottom .numb,
+.vehiclesPage .flaged .bottom .numb {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.visitorsPage .visitors .bottom .numb .figure,
+.visitorsPage .vehicles .bottom .numb .figure,
+.visitorsPage .flaged .bottom .numb .figure,
+.vehiclesPage .visitors .bottom .numb .figure,
+.vehiclesPage .vehicles .bottom .numb .figure,
+.vehiclesPage .flaged .bottom .numb .figure {
+  font-size: 4em;
+  font-weight: bold;
+}
+.visitorsPage .visitors .bottom .numb .percent,
+.visitorsPage .vehicles .bottom .numb .percent,
+.visitorsPage .flaged .bottom .numb .percent,
+.vehiclesPage .visitors .bottom .numb .percent,
+.vehiclesPage .vehicles .bottom .numb .percent,
+.vehiclesPage .flaged .bottom .numb .percent {
+  display: none;
+}
+.visitorsPage .visitors .down,
+.visitorsPage .vehicles .down,
+.visitorsPage .flaged .down,
+.vehiclesPage .visitors .down,
+.vehiclesPage .vehicles .down,
+.vehiclesPage .flaged .down {
+  font-size: 0.8em;
+  padding: 0 0 0 40px;
+}
+.visitorsPage .visitors .down span,
+.visitorsPage .vehicles .down span,
+.visitorsPage .flaged .down span,
+.vehiclesPage .visitors .down span,
+.vehiclesPage .vehicles .down span,
+.vehiclesPage .flaged .down span {
+  color: var(--green);
+}
+
+@media screen and (max-width: 1024px) {
+  .visitorsPage .visitors .dcardtop,
+  .visitorsPage .vehicles .dcardtop,
+  .visitorsPage .flaged .dcardtop,
+  .vehiclesPage .visitors .dcardtop,
+  .vehiclesPage .vehicles .dcardtop,
+  .vehiclesPage .flaged .dcardtop {
+    width: 70%;
+  }
+  .visitorsPage .visitors .dcardtop .title,
+  .visitorsPage .vehicles .dcardtop .title,
+  .visitorsPage .flaged .dcardtop .title,
+  .vehiclesPage .visitors .dcardtop .title,
+  .vehiclesPage .vehicles .dcardtop .title,
+  .vehiclesPage .flaged .dcardtop .title {
+    font-size: 0.8em;
+  }
+  .visitorsPage .visitors .dcardtop .icon,
+  .visitorsPage .vehicles .dcardtop .icon,
+  .visitorsPage .flaged .dcardtop .icon,
+  .vehiclesPage .visitors .dcardtop .icon,
+  .vehiclesPage .vehicles .dcardtop .icon,
+  .vehiclesPage .flaged .dcardtop .icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 8px 10px;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 900px) {
+  .visitorsPage .visitors .dcardtop .title,
+  .visitorsPage .vehicles .dcardtop .title,
+  .visitorsPage .flaged .dcardtop .title,
+  .vehiclesPage .visitors .dcardtop .title,
+  .vehiclesPage .vehicles .dcardtop .title,
+  .vehiclesPage .flaged .dcardtop .title {
+    font-size: 0.6em;
+  }
+  .visitorsPage .visitors .dcardtop .icon,
+  .visitorsPage .vehicles .dcardtop .icon,
+  .visitorsPage .flaged .dcardtop .icon,
+  .vehiclesPage .visitors .dcardtop .icon,
+  .vehiclesPage .vehicles .dcardtop .icon,
+  .vehiclesPage .flaged .dcardtop .icon {
+    padding: 5px 8px;
+  }
+  .visitorsPage .visitors .bottom .figure,
+  .visitorsPage .vehicles .bottom .figure,
+  .visitorsPage .flaged .bottom .figure,
+  .vehiclesPage .visitors .bottom .figure,
+  .vehiclesPage .vehicles .bottom .figure,
+  .vehiclesPage .flaged .bottom .figure {
+    margin-top: 20px;
+    font-size: 3em !important;
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=smallpageCards.css.map */

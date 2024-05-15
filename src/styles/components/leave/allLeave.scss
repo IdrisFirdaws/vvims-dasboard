@@ -1,4 +1,4 @@
-.allAttendancePage {
+.leaveMangementPage {
   .allVisitors {
     .listTop {
       display: flex;
@@ -83,25 +83,26 @@
       flex-direction: column;
       padding: 10px;
       position: relative;
+      font-size: 0.8em;
       td {
         border: 1px solid var(--line-color);
+        padding: 10px;
       }
       .headingItem {
         color: var(--text-color);
         font-size: 0.8em;
-        width: 100%;
+        // width: 100%;
         padding: 10px;
+        text-transform: capitalize;
       }
 
       .visItem {
         width: 100%;
         .item,
-        .present,
-        .absent,
-        .late,
-        .part-time,
-        .full-time {
-          // width: 100%;
+        .status,
+        .approved,
+        .rejected,
+        .pending {
           text-transform: capitalize;
           font-size: 0.8em;
           padding: 10px;
@@ -112,43 +113,56 @@
             margin-left: 5px;
           }
         }
-        .date,
+
         .status,
-        .present,
-        .absent,
-        .late,
-        .role,
+        .approved,
+        .rejected,
+        .pending,
+        .type,
         .id {
           width: 100px;
         }
 
-        .check {
-          width: 150px;
+        .to,
+        .from {
+          width: 200px;
         }
-        .emp,
-        .full-time,
-        .part-time {
-          width: 150px;
+
+        .days,
+        .action {
+          width: 70px;
         }
+
         .staff {
           width: 250px;
         }
 
-        .dept {
+        .desc {
           width: 300px;
         }
-        .full-time {
-          color: #f811f8;
+
+        .approved {
+          color: #16d816;
         }
-        .present {
-          color: var(--green);
+        .rejected {
+          color: red;
         }
-        .part-time,
-        .absent {
-          color: var(--red);
+        .pending {
+          color: #e4e411;
         }
-        .late {
-          color: #b8b806;
+
+        .action {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          padding: 11px 10px;
+          .check {
+            color: green;
+          }
+          .null {
+            color: red;
+          }
         }
       }
     }
@@ -156,7 +170,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .allAttendancePage {
+  .leaveMangementPage {
     .allVisitors {
       .listTop {
         .buttons {
@@ -181,7 +195,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .allAttendancePage {
+  .leaveMangementPage {
     .allVisitors {
       .listTop {
         padding: 20px 2%;
@@ -216,7 +230,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .allAttendancePage {
+  .leaveMangementPage {
     .allVisitors {
       .listTop {
         .right {

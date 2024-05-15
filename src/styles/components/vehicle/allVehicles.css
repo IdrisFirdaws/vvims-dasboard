@@ -1,0 +1,269 @@
+.vehiclesPage .allVisitors .listTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 30px 2%;
+  gap: 10px;
+}
+.vehiclesPage .allVisitors .listTop .right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.vehiclesPage .allVisitors .listTop .right .visTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0;
+}
+.vehiclesPage .allVisitors .listTop .right .searchbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.vehiclesPage .allVisitors .listTop .right .searchbar .input {
+  padding: 10px 50px 10px 20px;
+  border-radius: 10px;
+  background-color: var(--line-color);
+  color: var(--text-light);
+  display: flex;
+  cursor: pointer;
+}
+.vehiclesPage .allVisitors .listTop .right .searchbar .input input {
+  margin-left: 10px;
+  background-color: var(--line-color);
+  border: none;
+  outline: none;
+}
+.vehiclesPage .allVisitors .listTop .right .searchbar select {
+  background-color: #fff;
+  border: 1px solid var(--line-color);
+  padding: 9px;
+  border-radius: 10px;
+}
+.vehiclesPage .allVisitors .listTop .buttons {
+  display: flex;
+  gap: 5px;
+}
+.vehiclesPage .allVisitors .listTop .buttons .print {
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.vehiclesPage .allVisitors table {
+  width: 100%;
+}
+.vehiclesPage .allVisitors table .heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  width: 100%;
+}
+.vehiclesPage .allVisitors table .heading .headingItem {
+  color: var(--text-light);
+  font-size: 0.8em;
+  width: 100%;
+}
+.vehiclesPage .allVisitors table .heading .headingItem span {
+  margin-right: 5px;
+}
+.vehiclesPage .allVisitors table .visTitle {
+  font-size: 2em;
+  font-weight: bold;
+  width: 90%;
+  margin-bottom: 30px;
+}
+.vehiclesPage .allVisitors table .visItems {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+}
+.vehiclesPage .allVisitors table .visItems .visItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.vehiclesPage .allVisitors table .visItems .visItem .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.vehiclesPage .allVisitors table .visItems .visItem .user .icon {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+.vehiclesPage .allVisitors table .visItems .visItem .user .text {
+  font-size: 0.9em;
+  margin-right: 5px;
+  padding: 5px 0;
+}
+.vehiclesPage .allVisitors table .visItems .visItem .user .text p {
+  color: #000;
+  margin-bottom: 5px;
+}
+.vehiclesPage .allVisitors table .visItems .visItem .user .text span {
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+.vehiclesPage .allVisitors table .visItems .visItem .extra {
+  font-size: 0.8em;
+}
+.vehiclesPage .allVisitors table .visItems .visItem .flaged {
+  font-size: 0.6em;
+  background-color: var(--light-red);
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  color: var(--red);
+  border-radius: 10px;
+  padding: 5px 0;
+}
+.vehiclesPage .allVisitors table .visItems .visItem .unflaged {
+  font-size: 0.6em;
+  background-color: var(--light-green);
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  color: var(--green);
+  border-radius: 10px;
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .vehiclesPage .allVisitors .heading .headingItem span {
+    margin-right: 5px;
+  }
+  .vehiclesPage .allVisitors .time {
+    display: none;
+  }
+  .vehiclesPage .allVisitors .visTitle {
+    font-size: 2em;
+    font-weight: bold;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .vehiclesPage .allVisitors .visItems {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+  }
+  .vehiclesPage .allVisitors .visItems hr {
+    margin: 10px 2%;
+    border: 0.5px solid var(--line-color);
+    width: 98%;
+  }
+  .vehiclesPage .allVisitors .visItems .visItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .vehiclesPage .allVisitors .visItems .visItem .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .vehiclesPage .allVisitors .visItems .visItem .user .icon {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .vehiclesPage .allVisitors .visItems .visItem .user .text {
+    font-size: 0.9em;
+    margin-right: 5px;
+    padding: 5px 0;
+  }
+  .vehiclesPage .allVisitors .visItems .visItem .user .text p {
+    color: #000;
+    margin-bottom: 5px;
+  }
+  .vehiclesPage .allVisitors .visItems .visItem .user .text span {
+    color: var(--primary-color);
+    text-transform: capitalize;
+  }
+  .vehiclesPage .allVisitors .visItems .visItem .extra {
+    font-size: 0.8em;
+  }
+  .vehiclesPage .allVisitors .visItems .visItem .flaged {
+    font-size: 0.6em;
+    background-color: var(--light-red);
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    color: var(--red);
+    border-radius: 10px;
+    padding: 5px 0;
+  }
+  .vehiclesPage .allVisitors .visItems .visItem .unflaged {
+    font-size: 0.6em;
+    background-color: var(--light-green);
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    color: var(--green);
+    border-radius: 10px;
+    padding: 5px 0;
+  }
+  .vehiclesPage .allVisitors hr {
+    margin: 10px 2%;
+    border: 0.5px solid var(--line-color);
+  }
+}
+@media screen and (max-width: 600px) {
+  .vehiclesPage .allVisitors .listTop {
+    flex-wrap: wrap;
+  }
+  .vehiclesPage .allVisitors .listTop .right {
+    gap: 10px;
+  }
+  .vehiclesPage .allVisitors .listTop .right .visTitle {
+    font-size: 0.8em !important;
+  }
+  .vehiclesPage .allVisitors .listTop .right .searchbar .input {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+  .vehiclesPage .allVisitors .listTop .right .searchbar .input input {
+    margin-left: 0;
+    background-color: var(--line-color);
+    border: none;
+    outline: none;
+  }
+  .vehiclesPage .allVisitors .listTop .right .searchbar select {
+    display: none;
+  }
+  .vehiclesPage .allVisitors .listTop .button {
+    padding: 10px;
+    background-color: var(--green);
+    border-radius: 10px;
+    color: #fff;
+  }
+  .vehiclesPage .allVisitors .listTop .button span {
+    margin-left: 5px;
+  }
+  .vehiclesPage .allVisitors .button {
+    display: none;
+  }
+  .vehiclesPage .heading {
+    display: none;
+  }
+  .vehiclesPage .heading .sm {
+    display: none;
+  }
+  .vehiclesPage hr {
+    display: none;
+  }
+}/*# sourceMappingURL=allVehicles.css.map */

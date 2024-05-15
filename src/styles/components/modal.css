@@ -1,0 +1,105 @@
+.addItemModal {
+  padding-top: 20px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0;
+  z-index: 1000 !important;
+}
+.addItemModal .modalWrapper {
+  background-color: #fff;
+  width: 45%;
+  border-radius: 10px;
+}
+.addItemModal .modalWrapper hr {
+  border: 0.5px solid var(--line-color);
+}
+.addItemModal .modalWrapper .modalTop {
+  padding: 10px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.addItemModal .modalWrapper .modalTop .title {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.addItemModal .modalWrapper .modalTop .closeModal {
+  color: var(--blue);
+  padding: 1px 2px;
+  box-shadow: var(--shadow);
+}
+.addItemModal .modalWrapper form {
+  padding: 0 50px;
+  display: flex;
+  justify-content: start;
+  gap: 20px 50px;
+  flex-wrap: wrap;
+  align-items: start;
+}
+.addItemModal .modalWrapper form .input {
+  width: 40%;
+  border: 1px solid var(--line-color);
+  display: flex;
+  flex-direction: column;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+.addItemModal .modalWrapper form .input label {
+  text-transform: capitalize;
+  font-size: 0.9em;
+}
+.addItemModal .modalWrapper form .input input,
+.addItemModal .modalWrapper form .input select,
+.addItemModal .modalWrapper form .input textarea {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-light);
+}
+.addItemModal .modalWrapper .modalBottom {
+  padding: 0 80px 10px 20px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.addItemModal .modalWrapper .modalBottom button {
+  padding: 2px 15px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.addItemModal .modalWrapper .modalBottom button.close {
+  background-color: #cfcf2c;
+  border: 1px solid #cfcf2c;
+}
+.addItemModal .modalWrapper .modalBottom button.add {
+  background-color: #0baf0b;
+  border: 1px solid #0baf0b;
+}
+.addItemModal .modalWrapper .modalBottom button.create {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+
+@media screen and (max-width: 1024px) {
+  .addItemModal .modalWrapper {
+    width: 80%;
+  }
+  .addItemModal .modalWrapper form {
+    padding: 10px 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .addItemModal .modalWrapper {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .addItemModal .modalWrapper form .input {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=modal.css.map */
