@@ -181,6 +181,7 @@
     position: relative;
     width: 83%;
     z-index: 10;
+    height: 100vh;
 
     .top {
       margin: 100px 0 30px 3%;
@@ -196,6 +197,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         .breadcrumbs {
           width: 50%;
           .active {
@@ -316,11 +318,15 @@
 
     .content {
       .top {
-        .breadcrumbs {
-          width: 100%;
-        }
-        .time {
-          display: none;
+        .down {
+          gap: 10px;
+          .breadcrumbs {
+            width: 100% !important;
+          }
+          .time,
+          .btn {
+            width: fit-content;
+          }
         }
       }
     }

@@ -38,20 +38,20 @@ export default function AttendanceList() {
                 {currentItems.map(staff => (
                     <tr className="visItem" key={staff.staffId}>
 
-                        <td className="extra date">
+                        <td className="item date">
                             {staff.date}
                         </td>
 
-                        <td className="extra staff">
+                        <td className="item staff">
                             <FontAwesomeIcon icon={faUserCircle} className='icon' />
                             <span>{staff.staff}</span>
                         </td>
 
-                        <td className="extra id">
+                        <td className="item id">
                             {staff.id}
                         </td>
 
-                        <td className="extra dept">
+                        <td className="item dept">
                             {staff.dept}
                         </td>
 
@@ -63,15 +63,15 @@ export default function AttendanceList() {
                             {staff.status}
                         </td>
 
-                        <td className='extra role'>
+                        <td className='item role'>
                             {staff.role}
                         </td>
 
-                        <td className='extra check'>
+                        <td className='item check'>
                             {staff.checkIn}
                         </td>
 
-                        <td className='extra check'>
+                        <td className='item check'>
                             {staff.checkOut}
                         </td>
                     </tr>

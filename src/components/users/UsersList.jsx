@@ -35,32 +35,32 @@ export default function UsersList() {
                 {currentItems.map(staff => (
                     <tr className="visItem" key={staff.staffId}>
 
-                        <td className="extra staff">
+                        <td className="item staff">
                             <FontAwesomeIcon icon={faUserCircle} className='icon' />
                             <span>{staff.staff}</span>
                         </td>
 
-                        <td className="extra id">
+                        <td className="item id">
                             {staff.id}
                         </td>
 
-                        <td className="extra dept">
+                        <td className="item dept">
                             {staff.dept}
                         </td>
 
-                        <td className='extra role'>
+                        <td className='item role'>
                             {staff.role}
                         </td>
 
-                        <td className='extra phone'>
+                        <td className='item phone'>
                             {staff.phone}
                         </td>
 
-                        <td className='extra email'>
+                        <td className='item email'>
                             {staff.email}
                         </td>
 
-                        <td className='extra action'>
+                        <td className='item action'>
                             <FontAwesomeIcon icon={faPenToSquare} className='edit' />
                             <FontAwesomeIcon icon={faTrashCan} className='del' />
                         </td>
