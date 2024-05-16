@@ -22,6 +22,7 @@ import VehiclesAnalyser from "./pages/VehiclesAnalyser";
 import VisitorsAnalyser from "./pages/VisitorAnalyser";
 import Users from "./pages/Users";
 import LeaveManagementPage from "./pages/LeaveManagementPage";
+import ApplyLeave from "./pages/ApplyLeave";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -37,6 +38,7 @@ const router = createBrowserRouter(
         <Route path="/all-attendance" element={<AllAttendancePage />} />
 
         <Route path="/all-leave" element={<LeaveManagementPage />} />
+        <Route path="/apply-leave" element={<ApplyLeave />} />
 
         <Route path="/visitors" element={<VisitorsPage />} />
         <Route path="/visitors-analyser" element={<VisitorsAnalyser />} />

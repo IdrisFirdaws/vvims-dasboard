@@ -31,6 +31,7 @@ body {
 @import url(pages/AllAttendancePage.scss);
 @import url(pages/usersPage.scss);
 @import url(pages/LeaveManagement.scss);
+@import url(pages/applyLeave.scss);
 
 //components
 @import url(components/navbar.scss);
@@ -38,7 +39,8 @@ body {
 @import url(components/chart.scss);
 @import url(components/pagination.scss);
 @import url(components/smallpageCards.scss);
-@import url(components/modal.scss);
+@import url(components/addItemModal.scss);
+@import url(components/successModal.scss);
 
 //visitors
 @import url(components/visitors/allVisitors.scss);
@@ -65,46 +67,5 @@ body {
 
 //leave
 @import url(components/leave/allLeave.scss);
-
-.leavePageCards {
-  display: flex;
-  align-items: center;
-  text-transform: capitalize;
-  gap: 30px;
-  .cardLeft {
-    width: 40%;
-    height: 50%;
-  }
-  .cardRight {
-    margin-top: 30px;
-    .title {
-      font-size: 0.9em;
-      &.casual {
-        color: purple;
-      }
-      &.sick {
-        color: #f84f43;
-      }
-      &.earned {
-        color: #031c5f;
-      }
-      &.adjustment {
-        color: #bbbb06;
-      }
-      &.unpaid {
-        color: #386bf6;
-      }
-      &.half {
-        color: green;
-      }
-    }
-    ul {
-      margin-top: 5px;
-      padding-left: 10px;
-      li {
-        font-size: 0.8em;
-        margin-bottom: 5px;
-      }
-    }
-  }
-}
+@import url(components/leave/leavePageCards.scss);
+@import url(components/leave/applyLeaveForm.scss);

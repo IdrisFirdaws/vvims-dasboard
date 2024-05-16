@@ -6,10 +6,13 @@
       justify-content: space-between;
       margin: 0;
       padding: 30px 2%;
+      flex-wrap: wrap;
+      gap: 20px;
       .right {
         display: flex;
         gap: 20px;
         align-items: center;
+        flex-wrap: wrap;
         .visTitle {
           font-size: 1.2em;
           font-weight: bold;
@@ -21,6 +24,7 @@
           display: flex;
           align-items: center;
           gap: 10px;
+          flex-wrap: wrap;
           .input {
             padding: 10px 50px 10px 20px;
             border-radius: 10px;
@@ -42,22 +46,6 @@
             padding: 9px;
             border-radius: 10px;
             cursor: pointer;
-          }
-
-          .datePickerContainer {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            background-color: #fff;
-            border: 1px solid var(--line-color);
-            padding: 0 10px;
-            border-radius: 10px;
-            cursor: pointer;
-            .select {
-              border: none;
-              outline: none;
-              padding: 9px 0;
-            }
           }
         }
       }
@@ -172,22 +160,9 @@
 @media screen and (max-width: 1024px) {
   .leaveMangementPage {
     .allVisitors {
-      .listTop {
-        .buttons {
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-      }
-
       .visItems {
-        .visItem {
-          .role,
-          .dept {
-            display: none;
-          }
-          .staff {
-            width: 150px;
-          }
+        .staff {
+          width: 350px;
         }
       }
     }
@@ -197,31 +172,8 @@
 @media screen and (max-width: 900px) {
   .leaveMangementPage {
     .allVisitors {
-      .listTop {
-        padding: 20px 2%;
-        flex-wrap: wrap;
-        gap: 20px;
-        .right {
-          .visTitle {
-            font-size: 1em;
-          }
-          .searchbar {
-            .input {
-              padding: 10px 20px 10px 20px;
-            }
-
-            .datePickerContainer {
-              padding: 0 4px;
-              cursor: pointer;
-            }
-          }
-        }
-      }
-
       .visItems {
-        .emp,
-        .full-time,
-        .part-time {
+        .desc {
           display: none;
         }
       }
@@ -229,25 +181,26 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .leaveMangementPage {
     .allVisitors {
-      .listTop {
-        .right {
-          flex-wrap: wrap;
-          .searchbar {
-            flex-wrap: wrap;
-          }
-        }
-      }
-
       .visItems {
-        .check,
-        .id,
-        .status,
-        .present,
-        .absent,
-        .late {
+        .type,
+        .id {
+          display: none;
+        }
+
+        .to,
+        .from {
+          display: none;
+        }
+
+        .days {
+          width: 70px;
+          display: none;
+        }
+
+        .desc {
           display: none;
         }
       }

@@ -1,0 +1,68 @@
+.applyLeavePage {
+  .leaveFormWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .leaveFormTop {
+      text-align: center;
+      .title {
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+        font-size: 1.2em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+    }
+
+    .leaveForm {
+      display: flex;
+      width: 80%;
+      flex-wrap: wrap;
+      align-items: start;
+      gap: 70px;
+      .formLeft,
+      .formRight {
+        width: 45%;
+        .formItem {
+          width: 100%;
+          margin-bottom: 20px;
+          label {
+            padding: 5px 10px;
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+          input,
+          select,
+          textarea {
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid var(--inactive-color);
+            outline: none;
+            box-shadow: var(--shadow);
+            border-radius: 10px;
+            color: var(--text-light);
+          }
+          select {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .leaveFormBottom {
+      .submit {
+        padding: 10px 30px;
+        background-color: var(--primary-color);
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

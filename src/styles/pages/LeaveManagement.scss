@@ -28,22 +28,6 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .leaveMangementPage {
-    .box1,
-    .box2,
-    .box3,
-    .box4,
-    .box5 {
-      width: 15%;
-    }
-
-    .box8 {
-      width: 91.2%;
-    }
-  }
-}
-
 @media screen and (max-width: 900px) {
   .leaveMangementPage {
     .box1,
@@ -52,11 +36,28 @@
     .box4,
     .box5,
     .box6 {
-      width: 25%;
+      width: 42%;
     }
 
     .box7 {
       width: 89%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .leaveMangementPage {
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6 {
+      width: 90%;
+    }
+
+    .box7 {
+      width: 90%;
     }
   }
 }
